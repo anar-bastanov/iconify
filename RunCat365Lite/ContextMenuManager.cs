@@ -223,7 +223,7 @@ internal class ContextMenuManager : IDisposable
         var message = "App has launched. " +
             "If the icon is not on the taskbar, it has been omitted, " +
             "so please move it manually and pin it.";
-        NotifyIcon.ShowBalloonTip(5000, "RunCat 365", message, ToolTipIcon.Info);
+        NotifyIcon.ShowBalloonTip(5000, "RunCat 365 Lite", message, ToolTipIcon.Info);
     }
 
     internal void AdvanceFrame()
