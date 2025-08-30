@@ -20,12 +20,15 @@ namespace RunCat365Lite;
 
 internal class ContextMenuManager : IDisposable
 {
-    private readonly CustomToolStripMenuItem systemInfoMenu = new();
-    private readonly NotifyIcon notifyIcon = new();
-    private readonly List<Icon> icons = [];
-    private readonly Lock iconLock = new();
-    private int current = 0;
-    private EndlessGameForm? endlessGameForm;
+    private readonly CustomToolStripMenuItem SystemInfoMenu = new();
+
+    private readonly NotifyIcon NotifyIcon = new();
+
+    private readonly List<Icon> Icons = [];
+
+    private readonly Lock IconLock = new();
+
+    private int CurrentIconIndex = 0;
 
     internal ContextMenuManager(
         Func<Runner> getRunner,
@@ -41,15 +44,15 @@ internal class ContextMenuManager : IDisposable
         Action onExit
     )
     {
-        systemInfoMenu.Text = "-\n-\n-\n-\n-";
-        systemInfoMenu.Enabled = false;
+        SystemInfoMenu.Text = "-\n-\n-\n-\n-";
+        SystemInfoMenu.Enabled = false;
 
         var runnersMenu = new CustomToolStripMenuItem("Runners");
         runnersMenu.SetupSubMenusFromEnum<Runner>(
             r => r.GetString(),
             (parent, sender, e) =>
             {
-                HandleMenuItemSelection<Runner>(
+                HandleMenuItemSelection(
                     parent,
                     sender,
                     (string? s, out Runner r) => Enum.TryParse(s, out r),
@@ -66,7 +69,7 @@ internal class ContextMenuManager : IDisposable
             t => t.GetString(),
             (parent, sender, e) =>
             {
-                HandleMenuItemSelection<Theme>(
+                HandleMenuItemSelection(
                     parent,
                     sender,
                     (string? s, out Theme t) => Enum.TryParse(s, out t),
@@ -83,7 +86,7 @@ internal class ContextMenuManager : IDisposable
             f => f.GetString(),
             (parent, sender, e) =>
             {
-                HandleMenuItemSelection<FPSMaxLimit>(
+                HandleMenuItemSelection(
                     parent,
                     sender,
                     (string? s, out FPSMaxLimit f) => FPSMaxLimitExtension.TryParse(s, out f),
@@ -107,9 +110,6 @@ internal class ContextMenuManager : IDisposable
             launchAtStartupMenu
         );
 
-        var endlessGameMenu = new CustomToolStripMenuItem("Endless Game");
-        endlessGameMenu.Click += (sender, e) => ShowOrActivateGameWindow(getSystemTheme);
-
         var appVersionMenu = new CustomToolStripMenuItem(
             $"{Application.ProductName} v{Application.ProductVersion}"
         )
@@ -131,13 +131,12 @@ internal class ContextMenuManager : IDisposable
 
         var contextMenuStrip = new ContextMenuStrip(new Container());
         contextMenuStrip.Items.AddRange(
-            systemInfoMenu,
+            SystemInfoMenu,
             new ToolStripSeparator(),
             runnersMenu,
             new ToolStripSeparator(),
             settingsMenu,
             informationMenu,
-            endlessGameMenu,
             new ToolStripSeparator(),
             exitMenu
         );
@@ -145,10 +144,10 @@ internal class ContextMenuManager : IDisposable
 
         SetIcons(getSystemTheme(), getManualTheme(), getRunner());
 
-        notifyIcon.Text = "-";
-        notifyIcon.Icon = icons[0];
-        notifyIcon.Visible = true;
-        notifyIcon.ContextMenuStrip = contextMenuStrip;
+        NotifyIcon.Text = "-";
+        NotifyIcon.Icon = Icons[0];
+        NotifyIcon.Visible = true;
+        NotifyIcon.ContextMenuStrip = contextMenuStrip;
     }
 
     private static void HandleMenuItemSelection<T>(
@@ -193,12 +192,12 @@ internal class ContextMenuManager : IDisposable
             list.Add((Icon)icon);
         }
 
-        lock (iconLock)
+        lock (IconLock)
         {
-            icons.ForEach(icon => icon.Dispose());
-            icons.Clear();
-            icons.AddRange(list);
-            current = 0;
+            Icons.ForEach(icon => icon.Dispose());
+            Icons.Clear();
+            Icons.AddRange(list);
+            CurrentIconIndex = 0;
         }
     }
 
@@ -219,55 +218,38 @@ internal class ContextMenuManager : IDisposable
         }
     }
 
-    private void ShowOrActivateGameWindow(Func<Theme> getSystemTheme)
-    {
-        if (endlessGameForm is null)
-        {
-            endlessGameForm = new EndlessGameForm(getSystemTheme());
-            endlessGameForm.FormClosed += (sender, e) =>
-            {
-                endlessGameForm = null;
-            };
-            endlessGameForm.Show();
-        }
-        else
-        {
-            endlessGameForm.Activate();
-        }
-    }
-
     internal void ShowBalloonTip()
     {
         var message = "App has launched. " +
             "If the icon is not on the taskbar, it has been omitted, " +
             "so please move it manually and pin it.";
-        notifyIcon.ShowBalloonTip(5000, "RunCat 365", message, ToolTipIcon.Info);
+        NotifyIcon.ShowBalloonTip(5000, "RunCat 365", message, ToolTipIcon.Info);
     }
 
     internal void AdvanceFrame()
     {
-        lock (iconLock)
+        lock (IconLock)
         {
-            if (icons.Count == 0) return;
-            if (icons.Count <= current) current = 0;
-            notifyIcon.Icon = icons[current];
-            current = (current + 1) % icons.Count;
+            if (Icons.Count == 0) return;
+            if (Icons.Count <= CurrentIconIndex) CurrentIconIndex = 0;
+            NotifyIcon.Icon = Icons[CurrentIconIndex];
+            CurrentIconIndex = (CurrentIconIndex + 1) % Icons.Count;
         }
     }
 
     internal void SetSystemInfoMenuText(string text)
     {
-        systemInfoMenu.Text = text;
+        SystemInfoMenu.Text = text;
     }
 
     internal void SetNotifyIconText(string text)
     {
-        notifyIcon.Text = text;
+        NotifyIcon.Text = text;
     }
 
     internal void HideNotifyIcon()
     {
-        notifyIcon.Visible = false;
+        NotifyIcon.Visible = false;
     }
 
     public void Dispose()
@@ -280,19 +262,17 @@ internal class ContextMenuManager : IDisposable
     {
         if (disposing)
         {
-            lock (iconLock)
+            lock (IconLock)
             {
-                icons.ForEach(icon => icon.Dispose());
-                icons.Clear();
+                Icons.ForEach(icon => icon.Dispose());
+                Icons.Clear();
             }
 
-            if (notifyIcon is not null)
+            if (NotifyIcon is not null)
             {
-                notifyIcon.ContextMenuStrip?.Dispose();
-                notifyIcon.Dispose();
+                NotifyIcon.ContextMenuStrip?.Dispose();
+                NotifyIcon.Dispose();
             }
-
-            endlessGameForm?.Dispose();
         }
     }
 
