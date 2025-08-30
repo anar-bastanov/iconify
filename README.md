@@ -1,40 +1,23 @@
-# RunCat 365
+# RunCat 365 Lite
 
-**A cute running cat animation on your Windows Taskbar.**
+A cute running cat animation on your Windows Taskbar, forked and stripped down from [RunCat 365](https://github.com/Kyome22/RunCat365) by [Kyome22](https://github.com/Kyome22).
 
-> [!CAUTION]
->
-> - This project is for Windows, so we do not accept inquiries about macOS version.
-> - We do not accept issues or pull requests in languages other than English.
-> - Issues that do not follow the Issue Template will be closed without question.
+## Features
 
-[![Github issues](https://img.shields.io/github/issues/Kyome22/RunCat365)](https://github.com/Kyome22/RunCat365/issues)
-[![Github forks](https://img.shields.io/github/forks/Kyome22/RunCat365)](https://github.com/Kyome22/RunCat365/network/members)
-[![Github stars](https://img.shields.io/github/stars/Kyome22/RunCat365)](https://github.com/Kyome22/RunCat365/stargazers)
-[![Top language](https://img.shields.io/github/languages/top/Kyome22/RunCat365)](https://github.com/Kyome22/RunCat365/)
-[![Release](https://img.shields.io/github/v/release/Kyome22/RunCat365)]()
-[![Github license](https://img.shields.io/github/license/Kyome22/RunCat365)](https://github.com/Kyome22/RunCat365/)
+- Smooth cat running animation in the tray
+- Lightweight and minimal
+- Not much else
 
-`C#` `Win32` `.NET 9.0` `Visual Studio` `RunCat`
+## Preview
 
-## Demo
-
-<img src="./docs/images/demo.gif" width="600" height="200" alt="demo" />
-<br/>
-<img src="./docs/images/overview.png" width="600" height="343" alt="overview" />
-<br/>
-<img src="./docs/images/endless_game.png" width="600" height="343" alt="endless game" />
+...
 
 ## Installation
 
-RunCat 365 is available for installation on the Microsoft Store.
+...
 
-- Requirement: Windows 10 version 19041.0 or higher
-- Microsoft Store: https://apps.microsoft.com/detail/9nw5lpnvwfwj
-- Language: English
+## License
 
-## Contributors
-
-<a href="https://github.com/Kyome22/RunCat365/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Kyome22/RunCat365" />
-</a>
+Copyright © 2025 Anar Bastanov  
+Licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).  
+Includes code from RunCat365 by Kyome22.
