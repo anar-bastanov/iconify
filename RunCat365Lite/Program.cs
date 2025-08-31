@@ -50,8 +50,6 @@ internal class RunCat365LiteApplicationContext : ApplicationContext
 
     private const int FetchCounterSize = 5;
 
-    private const int AnimateTimerDefaultInterval = 200;
-
     private readonly CPURepository CpuRepository;
 
     private readonly MemoryRepository MemoryRepository;
@@ -104,7 +102,7 @@ internal class RunCat365LiteApplicationContext : ApplicationContext
 
         AnimateTimer = new FormsTimer
         {
-            Interval = AnimateTimerDefaultInterval
+            Interval = CalculateInterval()
         };
         AnimateTimer.Tick += new EventHandler(AnimationTick);
         AnimateTimer.Start();
@@ -183,6 +181,10 @@ internal class RunCat365LiteApplicationContext : ApplicationContext
         fpsMaxLimit = f;
         UserSettings.Default.FPSMaxLimit = fpsMaxLimit.ToString();
         UserSettings.Default.Save();
+
+        AnimateTimer.Stop();
+        AnimateTimer.Interval = CalculateInterval();
+        AnimateTimer.Start();
     }
 
     private void AnimationTick(object? sender, EventArgs e)
@@ -199,11 +201,9 @@ internal class RunCat365LiteApplicationContext : ApplicationContext
         ContextMenuManager.SetNotifyIconText(cpuInfo.GetDescription());
     }
 
-    private int CalculateInterval(float cpuTotalValue)
+    private int CalculateInterval()
     {
-        // Range of interval: 25-500 (ms) = 2-40 (fps)
-        var speed = (float)Math.Max(1.0f, cpuTotalValue / 5.0f * fpsMaxLimit.GetRate());
-        return (int)(500.0f / speed);
+        return (int)(50.0f / fpsMaxLimit.GetRate());
     }
 
     private void FetchTick(object? state, EventArgs e)
@@ -217,10 +217,6 @@ internal class RunCat365LiteApplicationContext : ApplicationContext
         var memoryInfo = MemoryRepository.Get();
         var storageInfo = StorageRepository.Get();
         FetchSystemInfo(cpuInfo, memoryInfo, storageInfo);
-
-        AnimateTimer.Stop();
-        AnimateTimer.Interval = CalculateInterval(cpuInfo.Total);
-        AnimateTimer.Start();
     }
 
     protected override void Dispose(bool disposing)
