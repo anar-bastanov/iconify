@@ -20,8 +20,6 @@ namespace RunCat365Lite;
 
 internal class ContextMenuManager : IDisposable
 {
-    private readonly CustomToolStripMenuItem SystemInfoMenu = new();
-
     private readonly NotifyIcon NotifyIcon = new();
 
     private readonly List<Icon> Icons = [];
@@ -44,9 +42,6 @@ internal class ContextMenuManager : IDisposable
         Action onExit
     )
     {
-        SystemInfoMenu.Text = "-\n-\n-\n-\n-";
-        SystemInfoMenu.Enabled = false;
-
         var runnersMenu = new CustomToolStripMenuItem("Runners");
         runnersMenu.SetupSubMenusFromEnum<Runner>(
             r => r.GetString(),
@@ -131,7 +126,6 @@ internal class ContextMenuManager : IDisposable
 
         var contextMenuStrip = new ContextMenuStrip(new Container());
         contextMenuStrip.Items.AddRange(
-            SystemInfoMenu,
             new ToolStripSeparator(),
             runnersMenu,
             new ToolStripSeparator(),
@@ -235,11 +229,6 @@ internal class ContextMenuManager : IDisposable
             NotifyIcon.Icon = Icons[CurrentIconIndex];
             CurrentIconIndex = (CurrentIconIndex + 1) % Icons.Count;
         }
-    }
-
-    internal void SetSystemInfoMenuText(string text)
-    {
-        SystemInfoMenu.Text = text;
     }
 
     internal void SetNotifyIconText(string text)

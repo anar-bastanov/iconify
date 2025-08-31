@@ -141,7 +141,7 @@ internal class RunCat365LiteApplicationContext : ApplicationContext
 
     private void UserPreferenceChanged(object sender, UserPreferenceChangedEventArgs e)
     {
-        if (e.Category == UserPreferenceCategory.General)
+        if (e.Category is UserPreferenceCategory.General)
         {
             var systemTheme = GetSystemTheme();
             ContextMenuManager.SetIcons(systemTheme, manualTheme, runner);
@@ -197,12 +197,6 @@ internal class RunCat365LiteApplicationContext : ApplicationContext
     )
     {
         ContextMenuManager.SetNotifyIconText(cpuInfo.GetDescription());
-
-        var systemInfoValues = new List<string>();
-        systemInfoValues.AddRange(cpuInfo.GenerateIndicator());
-        systemInfoValues.AddRange(memoryInfo.GenerateIndicator());
-        systemInfoValues.AddRange(storageValue.GenerateIndicator());
-        ContextMenuManager.SetSystemInfoMenuText(string.Join("\n", [.. systemInfoValues]));
     }
 
     private int CalculateInterval(float cpuTotalValue)
