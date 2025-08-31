@@ -25,7 +25,7 @@ internal static class Program
     [STAThread]
     static void Main()
     {
-        // Terminate RunCat365Lite if there iss any existing instance.
+        // Terminate RunCat 365 Lite if there is any existing instance.
         using var processMutex = new Mutex(true, "_RUNCATLITE_MUTEX", out var result);
 
         if (!result)
@@ -46,53 +46,36 @@ internal static class Program
 
 internal class RunCat365LiteApplicationContext : ApplicationContext
 {
-    private const int FetchTimerDefaultInterval = 1000;
-
-    private const int FetchCounterSize = 5;
-
-    private readonly CPURepository CpuRepository;
-
-    private readonly MemoryRepository MemoryRepository;
-
-    private readonly StorageRepository StorageRepository;
-
     private readonly LaunchAtStartupManager LaunchAtStartupManager;
 
     private readonly ContextMenuManager ContextMenuManager;
 
-    private readonly FormsTimer FetchTimer;
-
     private readonly FormsTimer AnimateTimer;
 
-    private Runner runner = Runner.Cat;
+    private Runner Runner = Runner.Cat;
 
-    private Theme manualTheme = Theme.System;
+    private Theme ManualTheme = Theme.System;
 
-    private FPSMaxLimit fpsMaxLimit = FPSMaxLimit.FPS40;
-
-    private int FetchCounter = 5;
+    private FPSMaxLimit FpsMaxLimit = FPSMaxLimit.FPS40;
 
     public RunCat365LiteApplicationContext()
     {
         UserSettings.Default.Reload();
-        _ = Enum.TryParse(UserSettings.Default.Runner, out runner);
-        _ = Enum.TryParse(UserSettings.Default.Theme, out manualTheme);
-        _ = Enum.TryParse(UserSettings.Default.FPSMaxLimit, out fpsMaxLimit);
+        _ = Enum.TryParse(UserSettings.Default.Runner, out Runner);
+        _ = Enum.TryParse(UserSettings.Default.Theme, out ManualTheme);
+        _ = Enum.TryParse(UserSettings.Default.FPSMaxLimit, out FpsMaxLimit);
 
         SystemEvents.UserPreferenceChanged += new UserPreferenceChangedEventHandler(UserPreferenceChanged);
 
-        CpuRepository = new CPURepository();
-        MemoryRepository = new MemoryRepository();
-        StorageRepository = new StorageRepository();
         LaunchAtStartupManager = new LaunchAtStartupManager();
 
         ContextMenuManager = new ContextMenuManager(
-            () => runner,
+            () => Runner,
             ChangeRunner,
             GetSystemTheme,
-            () => manualTheme,
+            () => ManualTheme,
             ChangeManualTheme,
-            () => fpsMaxLimit,
+            () => FpsMaxLimit,
             ChangeFPSMaxLimit,
             LaunchAtStartupManager.GetStartup,
             LaunchAtStartupManager.SetStartup,
@@ -100,19 +83,14 @@ internal class RunCat365LiteApplicationContext : ApplicationContext
             Application.Exit
         );
 
+        ContextMenuManager.SetNotifyIconText("RunCat 365 Lite");
+
         AnimateTimer = new FormsTimer
         {
             Interval = CalculateInterval()
         };
         AnimateTimer.Tick += new EventHandler(AnimationTick);
         AnimateTimer.Start();
-
-        FetchTimer = new FormsTimer
-        {
-            Interval = FetchTimerDefaultInterval
-        };
-        FetchTimer.Tick += new EventHandler(FetchTick);
-        FetchTimer.Start();
 
         ShowBalloonTip();
     }
@@ -124,7 +102,7 @@ internal class RunCat365LiteApplicationContext : ApplicationContext
         if (rKey is null) return Theme.Light;
         var value = rKey.GetValue("SystemUsesLightTheme");
         if (value is null) return Theme.Light;
-        return (int)value == 0 ? Theme.Dark : Theme.Light;
+        return value is 0 ? Theme.Dark : Theme.Light;
     }
 
     private void ShowBalloonTip()
@@ -142,7 +120,7 @@ internal class RunCat365LiteApplicationContext : ApplicationContext
         if (e.Category is UserPreferenceCategory.General)
         {
             var systemTheme = GetSystemTheme();
-            ContextMenuManager.SetIcons(systemTheme, manualTheme, runner);
+            ContextMenuManager.SetIcons(systemTheme, ManualTheme, Runner);
         }
     }
 
@@ -164,22 +142,22 @@ internal class RunCat365LiteApplicationContext : ApplicationContext
 
     private void ChangeRunner(Runner r)
     {
-        runner = r;
-        UserSettings.Default.Runner = runner.ToString();
+        Runner = r;
+        UserSettings.Default.Runner = Runner.ToString();
         UserSettings.Default.Save();
     }
 
     private void ChangeManualTheme(Theme t)
     {
-        manualTheme = t;
-        UserSettings.Default.Theme = manualTheme.ToString();
+        ManualTheme = t;
+        UserSettings.Default.Theme = ManualTheme.ToString();
         UserSettings.Default.Save();
     }
 
     private void ChangeFPSMaxLimit(FPSMaxLimit f)
     {
-        fpsMaxLimit = f;
-        UserSettings.Default.FPSMaxLimit = fpsMaxLimit.ToString();
+        FpsMaxLimit = f;
+        UserSettings.Default.FPSMaxLimit = FpsMaxLimit.ToString();
         UserSettings.Default.Save();
 
         AnimateTimer.Stop();
@@ -192,31 +170,9 @@ internal class RunCat365LiteApplicationContext : ApplicationContext
         ContextMenuManager.AdvanceFrame();
     }
 
-    private void FetchSystemInfo(
-        CPUInfo cpuInfo,
-        MemoryInfo memoryInfo,
-        List<StorageInfo> storageValue
-    )
-    {
-        ContextMenuManager.SetNotifyIconText(cpuInfo.GetDescription());
-    }
-
     private int CalculateInterval()
     {
-        return (int)(50.0f / fpsMaxLimit.GetRate());
-    }
-
-    private void FetchTick(object? state, EventArgs e)
-    {
-        CpuRepository.Update();
-        FetchCounter += 1;
-        if (FetchCounter < FetchCounterSize) return;
-        FetchCounter = 0;
-
-        var cpuInfo = CpuRepository.Get();
-        var memoryInfo = MemoryRepository.Get();
-        var storageInfo = StorageRepository.Get();
-        FetchSystemInfo(cpuInfo, memoryInfo, storageInfo);
+        return (int)(50.0f / FpsMaxLimit.GetRate());
     }
 
     protected override void Dispose(bool disposing)
@@ -227,10 +183,6 @@ internal class RunCat365LiteApplicationContext : ApplicationContext
 
             AnimateTimer?.Stop();
             AnimateTimer?.Dispose();
-            FetchTimer?.Stop();
-            FetchTimer?.Dispose();
-
-            CpuRepository?.Close();
 
             ContextMenuManager?.HideNotifyIcon();
             ContextMenuManager?.Dispose();
