@@ -1,5 +1,4 @@
 ﻿// Copyright 2025 Anar Bastanov
-// Copyright 2025 Takuto Nakamura
 //
 //    Licensed under the Apache License, Version 2.0 (the "License");
 //    you may not use this file except in compliance with the License.
@@ -13,27 +12,19 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 
+using System.Diagnostics.CodeAnalysis;
+
 namespace RunCat365Lite;
 
-internal sealed class ContextMenuRenderer : ToolStripProfessionalRenderer
+internal interface IClosedEnum<TSelf> where TSelf : struct, IClosedEnum<TSelf> /*, IEquatable<TSelf>*/
 {
-    protected override void OnRenderItemText(ToolStripItemTextRenderEventArgs e)
-    {
-        if (e is not { Text: not (null or ""), Item: CustomToolStripMenuItem item })
-        {
-            base.OnRenderItemText(e);
-            return;
-        }
+    string GetString();
 
-        var textRectangle = e.TextRectangle with { Height = item.Bounds.Height };
+    static abstract bool TryParse([NotNullWhen(true)] string? value, out TSelf result);
 
-        TextRenderer.DrawText(
-            e.Graphics,
-            e.Text,
-            e.TextFont,
-            textRectangle,
-            item.ForeColor,
-            item.Flags()
-        );
-    }
+    static abstract ReadOnlySpan<TSelf> GetValues();
+
+    static abstract bool operator ==(TSelf left, TSelf right);
+
+    static abstract bool operator !=(TSelf left, TSelf right);
 }

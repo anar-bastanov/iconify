@@ -13,25 +13,55 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 
+using Microsoft.VisualBasic.Devices;
+using System.Diagnostics.CodeAnalysis;
+using System.Runtime.InteropServices;
+
 namespace RunCat365Lite;
 
-internal enum Theme
+internal readonly record struct Theme(uint value) : IClosedEnum<Theme>
 {
-    System,
-    Light,
-    Dark,
-}
+    public const uint
+        System = 0,
+        Light = 1,
+        Dark = 2;
 
-internal static class ThemeExtension
-{
-    internal static string GetString(this Theme theme)
+    private static ReadOnlySpan<uint> EnumerationValues => [
+        System,
+        Light,
+        Dark,
+    ];
+
+    public uint Value => value;
+
+    public string GetString()
     {
-        return theme switch
+        return value switch
         {
-            Theme.System => "System",
-            Theme.Light => "Light",
-            Theme.Dark => "Dark",
+            System => nameof(System),
+            Light => nameof(Light),
+            Dark => nameof(Dark),
             _ => "",
         };
     }
+
+    public static bool TryParse([NotNullWhen(true)] string? value, out Theme result)
+    {
+        Theme? nullableResult = value switch
+        {
+            nameof(System) => System,
+            nameof(Light) => Light,
+            nameof(Dark) => Dark,
+            _ => null,
+        };
+
+        result = nullableResult.GetValueOrDefault();
+        return nullableResult.HasValue;
+    }
+
+    public static ReadOnlySpan<Theme> GetValues() => MemoryMarshal.Cast<uint, Theme>(EnumerationValues);
+
+    public static implicit operator uint(Theme arg) => arg.Value;
+
+    public static implicit operator Theme(uint value) => new(value);
 }

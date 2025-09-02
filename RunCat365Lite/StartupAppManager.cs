@@ -17,38 +17,32 @@ using Microsoft.Win32;
 
 namespace RunCat365Lite;
 
-internal sealed class LaunchAtStartupManager
+internal static class StartupAppManager
 {
-    private const string KeyName = @"Software\Microsoft\Windows\CurrentVersion\Run";
-
-    private readonly string AppName = Application.ProductName!;
-
-    public bool GetStartup()
+    public static bool GetStartup()
     {
-        using var rKey = Registry.CurrentUser.OpenSubKey(KeyName);
+        using var rKey = Registry.CurrentUser.OpenSubKey(AppStrings.RegistryNameStartupApps);
 
-        return rKey is not null && rKey.GetValue(AppName) is not null;
+        return rKey?.GetValue(AppStrings.ApplicationName) is not null;
     }
 
-    public bool SetStartup(bool enabled)
+    public static bool SetStartup(bool enable)
     {
-        using var rKey = Registry.CurrentUser.OpenSubKey(KeyName, writable: true);
+        using var rKey = Registry.CurrentUser.OpenSubKey(AppStrings.RegistryNameStartupApps, writable: true);
 
         if (rKey is null)
             return false;
 
-        if (enabled)
+        if (enable)
         {
-            var exePath = Environment.ProcessPath;
-
-            if (exePath is null)
+            if (Environment.ProcessPath is not string exePath)
                 return false;
 
-            rKey.SetValue(AppName, exePath);
+            rKey.SetValue(AppStrings.ApplicationName, exePath);
         }
         else
         {
-            rKey.DeleteValue(AppName, throwOnMissingValue: false);
+            rKey.DeleteValue(AppStrings.ApplicationName, throwOnMissingValue: false);
         }
 
         return true;

@@ -1,5 +1,4 @@
 ﻿// Copyright 2025 Anar Bastanov
-// Copyright 2025 Takuto Nakamura
 //
 //    Licensed under the Apache License, Version 2.0 (the "License");
 //    you may not use this file except in compliance with the License.
@@ -13,27 +12,19 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 
+global using AppStrings = RunCat365Lite.ApplicationStrings;
+
 namespace RunCat365Lite;
 
-internal sealed class ContextMenuRenderer : ToolStripProfessionalRenderer
+public static class ApplicationStrings
 {
-    protected override void OnRenderItemText(ToolStripItemTextRenderEventArgs e)
-    {
-        if (e is not { Text: not (null or ""), Item: CustomToolStripMenuItem item })
-        {
-            base.OnRenderItemText(e);
-            return;
-        }
+    public const string RepositoryLink = "https://github.com/anar-bastanov/run-cat-365-lite";
 
-        var textRectangle = e.TextRectangle with { Height = item.Bounds.Height };
+    public const string RegistryNamePersonalization = @"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize";
 
-        TextRenderer.DrawText(
-            e.Graphics,
-            e.Text,
-            e.TextFont,
-            textRectangle,
-            item.ForeColor,
-            item.Flags()
-        );
-    }
+    public const string RegistryNameStartupApps = @"Software\Microsoft\Windows\CurrentVersion\Run";
+
+    public const string RegistryKeyIsLightTheme = "SystemUsesLightTheme";
+
+    public static readonly string ApplicationName = Application.ProductName!;
 }

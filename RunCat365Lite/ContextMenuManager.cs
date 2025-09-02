@@ -18,113 +18,54 @@ using System.ComponentModel;
 
 namespace RunCat365Lite;
 
-internal class ContextMenuManager : IDisposable
+internal sealed class ContextMenuManager : IDisposable
 {
-    private readonly NotifyIcon NotifyIcon = new();
+    private delegate bool CustomTryParseDelegate<T>(string? value, out T result);
 
-    private readonly List<Icon> Icons = [];
+    private List<Icon> _icons = [];
 
-    private readonly Lock IconLock = new();
+    private readonly NotifyIcon _notifyIcon = new();
 
-    private int CurrentIconIndex = 0;
+    private readonly Lock _iconLock = new();
 
-    internal ContextMenuManager(
+    private int _currentIconIndex = 0;
+
+    public ContextMenuManager(
         Func<Runner> getRunner,
         Action<Runner> setRunner,
         Func<Theme> getSystemTheme,
         Func<Theme> getManualTheme,
         Action<Theme> setManualTheme,
-        Func<FPSMaxLimit> getFPSMaxLimit,
-        Action<FPSMaxLimit> setFPSMaxLimit,
+        Func<FpsMaxLimit> getFPSMaxLimit,
+        Action<FpsMaxLimit> setFPSMaxLimit,
         Func<bool> getLaunchAtStartup,
-        Func<bool, bool> toggleLaunchAtStartup,
+        Func<bool, bool> setLaunchAtStartup,
         Action openRepository,
         Action onExit
     )
     {
         var runnersMenu = new CustomToolStripMenuItem("Runners");
-        runnersMenu.SetupSubMenusFromEnum<Runner>(
-            r => r.GetString(),
-            (parent, sender, e) =>
-            {
-                HandleMenuItemSelection(
-                    parent,
-                    sender,
-                    (string? s, out Runner r) => Enum.TryParse(s, out r),
-                    r => setRunner(r)
-                );
-                SetIcons(getSystemTheme(), getManualTheme(), getRunner());
-            },
-            r => getRunner() == r,
-            r => GetRunnerThumbnailBitmap(getSystemTheme(), r)
-        );
-
-        var themeMenu = new CustomToolStripMenuItem("Theme");
-        themeMenu.SetupSubMenusFromEnum<Theme>(
-            t => t.GetString(),
-            (parent, sender, e) =>
-            {
-                HandleMenuItemSelection(
-                    parent,
-                    sender,
-                    (string? s, out Theme t) => Enum.TryParse(s, out t),
-                    t => setManualTheme(t)
-                );
-                SetIcons(getSystemTheme(), getManualTheme(), getRunner());
-            },
-            t => getManualTheme() == t,
-            _ => null
-        );
-
-        var fpsMaxLimitMenu = new CustomToolStripMenuItem("FPS Max Limit");
-        fpsMaxLimitMenu.SetupSubMenusFromEnum<FPSMaxLimit>(
-            f => f.GetString(),
-            (parent, sender, e) =>
-            {
-                HandleMenuItemSelection(
-                    parent,
-                    sender,
-                    (string? s, out FPSMaxLimit f) => FPSMaxLimitExtension.TryParse(s, out f),
-                    f => setFPSMaxLimit(f)
-                );
-            },
-            f => getFPSMaxLimit() == f,
-            _ => null
-        );
-
-        var launchAtStartupMenu = new CustomToolStripMenuItem("Launch at startup")
-        {
-            Checked = getLaunchAtStartup()
-        };
-        launchAtStartupMenu.Click += (sender, e) => HandleStartupMenuClick(sender, toggleLaunchAtStartup);
-
         var settingsMenu = new CustomToolStripMenuItem("Settings");
+        var themeMenu = new CustomToolStripMenuItem("Theme");
+        var fpsMaxLimitMenu = new CustomToolStripMenuItem("FPS limit");
+        var launchAtStartupMenu = new CustomToolStripMenuItem("Launch at startup");
+        var informationMenu = new CustomToolStripMenuItem("Information");
+        var appVersionMenu = new CustomToolStripMenuItem($"{Application.ProductName} v{Application.ProductVersion}");
+        var repositoryMenu = new CustomToolStripMenuItem("Open repository");
+        var exitMenu = new CustomToolStripMenuItem("Exit");
+        var contextMenuStrip = new ContextMenuStrip(new Container());
+
         settingsMenu.DropDownItems.AddRange(
             themeMenu,
             fpsMaxLimitMenu,
             launchAtStartupMenu
         );
 
-        var appVersionMenu = new CustomToolStripMenuItem(
-            $"{Application.ProductName} v{Application.ProductVersion}"
-        )
-        {
-            Enabled = false
-        };
-
-        var repositoryMenu = new CustomToolStripMenuItem("Open Repository");
-        repositoryMenu.Click += (sender, e) => openRepository();
-
-        var informationMenu = new CustomToolStripMenuItem("Information");
         informationMenu.DropDownItems.AddRange(
             appVersionMenu,
             repositoryMenu
         );
 
-        var exitMenu = new CustomToolStripMenuItem("Exit");
-        exitMenu.Click += (sender, e) => onExit();
-
-        var contextMenuStrip = new ContextMenuStrip(new Container());
         contextMenuStrip.Items.AddRange(
             new ToolStripSeparator(),
             runnersMenu,
@@ -134,77 +75,120 @@ internal class ContextMenuManager : IDisposable
             new ToolStripSeparator(),
             exitMenu
         );
+
+        runnersMenu.SetupSubMenusFromEnum(
+            (parent, sender) =>
+            {
+                HandleMenuItemSelection(parent, sender, setRunner);
+
+                SetIcons(getSystemTheme(), getManualTheme(), getRunner());
+            },
+            getRunner(),
+            r => GetRunnerThumbnailBitmap(getSystemTheme(), r)
+        );
+
+        themeMenu.SetupSubMenusFromEnum(
+            (parent, sender) =>
+            {
+                HandleMenuItemSelection(parent, sender, setManualTheme);
+
+                SetIcons(getSystemTheme(), getManualTheme(), getRunner());
+            },
+            getManualTheme(),
+            _ => null
+        );
+
+        fpsMaxLimitMenu.SetupSubMenusFromEnum(
+            (parent, sender) =>
+            {
+                HandleMenuItemSelection(parent, sender, setFPSMaxLimit);
+            },
+            getFPSMaxLimit(),
+            _ => null
+        );
+
+        launchAtStartupMenu.Checked = getLaunchAtStartup();
+        launchAtStartupMenu.Click += (sender, _) => HandleStartupMenuClick(sender, setLaunchAtStartup);
+
+        appVersionMenu.Enabled = false;
+
+        repositoryMenu.Click += (_, _) => openRepository();
+
+        exitMenu.Click += (_, _) => onExit();
+
         contextMenuStrip.Renderer = new ContextMenuRenderer();
 
         SetIcons(getSystemTheme(), getManualTheme(), getRunner());
 
-        NotifyIcon.Text = "-";
-        NotifyIcon.Icon = Icons[0];
-        NotifyIcon.Visible = true;
-        NotifyIcon.ContextMenuStrip = contextMenuStrip;
+        _notifyIcon.Text = AppStrings.ApplicationName;
+        _notifyIcon.Icon = _icons![0];
+        _notifyIcon.Visible = true;
+        _notifyIcon.ContextMenuStrip = contextMenuStrip;
+
     }
 
     private static void HandleMenuItemSelection<T>(
         ToolStripMenuItem parentMenu,
         object? sender,
-        CustomTryParseDelegate<T> tryParseMethod,
-        Action<T> assignValueAction
-    )
+        Action<T> assignValue
+    ) where T : struct, IClosedEnum<T>
     {
-        if (sender is null) return;
-        var item = (ToolStripMenuItem)sender;
+        if (sender is not ToolStripMenuItem item)
+            return;
+
         foreach (ToolStripMenuItem childItem in parentMenu.DropDownItems)
-        {
             childItem.Checked = false;
-        }
+
         item.Checked = true;
-        if (tryParseMethod(item.Text, out T parsedValue))
-        {
-            assignValueAction(parsedValue);
-        }
+
+        if (T.TryParse(item.Text, out T parsedValue))
+            assignValue(parsedValue);
     }
 
     private static Bitmap? GetRunnerThumbnailBitmap(Theme systemTheme, Runner runner)
     {
-        var iconName = $"{systemTheme.GetString()}_{runner.GetString()}_0".ToLower();
-        var obj = Resources.ResourceManager.GetObject(iconName);
-        return obj is Icon icon ? icon.ToBitmap() : null;
+        string iconName = $"{systemTheme.GetString()}_{runner.GetString()}_0".ToLower();
+        var icon = Resources.ResourceManager.GetObject(iconName) as Icon;
+
+        return icon?.ToBitmap();
     }
 
-    internal void SetIcons(Theme systemTheme, Theme manualTheme, Runner runner)
+    public void SetIcons(Theme systemTheme, Theme manualTheme, Runner runner)
     {
-        var prefix = (manualTheme == Theme.System ? systemTheme : manualTheme).GetString();
-        var runnerName = runner.GetString();
         var rm = Resources.ResourceManager;
-        var capacity = runner.GetFrameNumber();
+
+        string prefix = (manualTheme == Theme.System ? systemTheme : manualTheme).GetString();
+        string runnerName = runner.GetString();
+        int capacity = runner.GetFrameNumber();
         var list = new List<Icon>(capacity);
+
         for (int i = 0; i < capacity; i++)
         {
-            var iconName = $"{prefix}_{runnerName}_{i}".ToLower();
-            var icon = rm.GetObject(iconName);
-            if (icon is null) continue;
-            list.Add((Icon)icon);
+            string iconName = $"{prefix}_{runnerName}_{i}".ToLower();
+
+            if (rm.GetObject(iconName) is Icon icon)
+                list.Add(icon);
         }
 
-        lock (IconLock)
+        lock (_iconLock)
         {
-            Icons.ForEach(icon => icon.Dispose());
-            Icons.Clear();
-            Icons.AddRange(list);
-            CurrentIconIndex = 0;
+            foreach (var icon in _icons)
+                icon.Dispose();
+
+            _currentIconIndex = 0;
+            _icons = list;
         }
     }
 
-    private static void HandleStartupMenuClick(object? sender, Func<bool, bool> toggleLaunchAtStartup)
+    private static void HandleStartupMenuClick(object? sender, Func<bool, bool> setLaunchAtStartup)
     {
-        if (sender is null) return;
-        var item = (ToolStripMenuItem)sender;
+        if (sender is not ToolStripMenuItem item)
+            return;
+
         try
         {
-            if (toggleLaunchAtStartup(item.Checked))
-            {
-                item.Checked = !item.Checked;
-            }
+            bool success = setLaunchAtStartup(!item.Checked);
+            item.Checked ^= success;
         }
         catch (InvalidOperationException ex)
         {
@@ -212,58 +196,44 @@ internal class ContextMenuManager : IDisposable
         }
     }
 
-    internal void ShowBalloonTip()
+    public void ShowBalloonTip()
     {
-        var message = "App has launched. " +
-            "If the icon is not on the taskbar, it has been omitted, " +
-            "so please move it manually and pin it.";
-        NotifyIcon.ShowBalloonTip(5000, "RunCat 365 Lite", message, ToolTipIcon.Info);
+        const string message =
+            "App has launched. If the icon is not on the taskbar, " +
+            "it has been omitted. Please move it manually and pin it.";
+
+        _notifyIcon.ShowBalloonTip(10000, AppStrings.ApplicationName, message, ToolTipIcon.Info);
     }
 
-    internal void AdvanceFrame()
+    public void AdvanceFrame()
     {
-        lock (IconLock)
+        lock (_iconLock)
         {
-            if (Icons.Count == 0) return;
-            if (Icons.Count <= CurrentIconIndex) CurrentIconIndex = 0;
-            NotifyIcon.Icon = Icons[CurrentIconIndex];
-            CurrentIconIndex = (CurrentIconIndex + 1) % Icons.Count;
+            if (_icons.Count is 0)
+                return;
+
+            _currentIconIndex = (_currentIconIndex + 1) % _icons.Count;
+            _notifyIcon.Icon = _icons[_currentIconIndex];
         }
-    }
-
-    internal void SetNotifyIconText(string text)
-    {
-        NotifyIcon.Text = text;
-    }
-
-    internal void HideNotifyIcon()
-    {
-        NotifyIcon.Visible = false;
     }
 
     public void Dispose()
     {
-        Dispose(true);
+        lock (_iconLock)
+        {
+            foreach (var icon in _icons)
+                icon.Dispose();
+
+            _icons.Clear();
+        }
+
+        if (_notifyIcon is not null)
+        {
+            _notifyIcon.Visible = false;
+            _notifyIcon.ContextMenuStrip?.Dispose();
+            _notifyIcon.Dispose();
+        }
+
         GC.SuppressFinalize(this);
     }
-
-    protected virtual void Dispose(bool disposing)
-    {
-        if (disposing)
-        {
-            lock (IconLock)
-            {
-                Icons.ForEach(icon => icon.Dispose());
-                Icons.Clear();
-            }
-
-            if (NotifyIcon is not null)
-            {
-                NotifyIcon.ContextMenuStrip?.Dispose();
-                NotifyIcon.Dispose();
-            }
-        }
-    }
-
-    private delegate bool CustomTryParseDelegate<T>(string? value, out T result);
 }

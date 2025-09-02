@@ -17,76 +17,83 @@ namespace RunCat365Lite;
 
 internal class CustomToolStripMenuItem : ToolStripMenuItem
 {
-    internal CustomToolStripMenuItem() : base() { }
-
-    internal CustomToolStripMenuItem(string? text) : base(text) { }
-
-    private CustomToolStripMenuItem(string? text, Image? image, bool isChecked, EventHandler? onClick) : base(text, image, onClick)
-    {
-        Checked = isChecked;
-    }
-
-    private readonly TextFormatFlags multiLineTextFlags =
+    private const TextFormatFlags MultiLineTextFlags =
         TextFormatFlags.LeftAndRightPadding |
         TextFormatFlags.VerticalCenter |
         TextFormatFlags.WordBreak |
         TextFormatFlags.TextBoxControl;
 
-    private readonly TextFormatFlags singleLineTextFlags =
+    private const TextFormatFlags SingleLineTextFlags =
         TextFormatFlags.LeftAndRightPadding |
         TextFormatFlags.VerticalCenter |
         TextFormatFlags.EndEllipsis;
 
+    public CustomToolStripMenuItem() : base()
+    {
+    }
+
+    public CustomToolStripMenuItem(string? text) : base(text)
+    {
+    }
+
+    public CustomToolStripMenuItem(string? text, Image? image, bool isChecked, EventHandler? onClick) : base(text, image, onClick)
+    {
+        Checked = isChecked;
+    }
+
     public override Size GetPreferredSize(Size constrainingSize)
     {
         Size baseSize = base.GetPreferredSize(constrainingSize);
-        if (string.IsNullOrEmpty(Text))
-        {
-            return new Size(baseSize.Width, 22);
-        }
-        var textRenderWidth = Math.Max(constrainingSize.Width - 20, 1);
 
-        SizeF measuredSize = TextRenderer.MeasureText(
+        if (Text is null or "")
+            return baseSize with { Height = 22 };
+
+        int textRenderWidth = Math.Max(constrainingSize.Width - 20, 1);
+
+        Size measuredSize = TextRenderer.MeasureText(
             Text,
             Font,
             new Size(textRenderWidth, int.MaxValue),
             Flags()
         );
-        var calculatedHeight = (int)Math.Ceiling(measuredSize.Height) + 4;
-        var height = IsSingleLine() ? calculatedHeight : Math.Max(baseSize.Height, calculatedHeight);
-        return new Size(baseSize.Width, height);
+
+        int calculatedHeight = measuredSize.Height + 4;
+        int height = IsSingleLine() ? calculatedHeight : Math.Max(baseSize.Height, calculatedHeight);
+
+        return baseSize with { Height = height };
     }
 
-    internal bool IsSingleLine()
+    public bool IsSingleLine()
     {
-        return string.IsNullOrEmpty(Text) || !Text.Contains('\n');
+        return Text is null || !Text.Contains('\n');
     }
 
-    internal TextFormatFlags Flags()
+    public TextFormatFlags Flags()
     {
-        return IsSingleLine() ? singleLineTextFlags : multiLineTextFlags;
+        return IsSingleLine() ? SingleLineTextFlags : MultiLineTextFlags;
     }
 
-    internal void SetupSubMenusFromEnum<T>(
-        Func<T, string> getTitle,
-        Action<CustomToolStripMenuItem, object?, EventArgs> onClick,
-        Func<T, bool> isChecked,
-        Func<Runner, Bitmap?> getRunnerThumbnailBitmap
-    ) where T : Enum
+    public void SetupSubMenusFromEnum<T>(
+        Action<CustomToolStripMenuItem, object?> onClick,
+        T selection,
+        Func<T, Bitmap?> getIconBitmap
+    ) where T : struct, IClosedEnum<T>
     {
-        var items = new List<CustomToolStripMenuItem>();
-        foreach (T value in Enum.GetValues(typeof(T)))
+        var values = T.GetValues();
+        var items = new CustomToolStripMenuItem[values.Length];
+
+        for (int i = 0; i < values.Length; ++i)
         {
-            var entityName = getTitle(value);
-            var iconImage = value is Runner runner ? getRunnerThumbnailBitmap(runner) : null;
-            var item = new CustomToolStripMenuItem(
-                entityName,
-                iconImage,
-                isChecked(value),
-                (sender, e) => onClick(this, sender, e)
+            var value = values[i];
+
+            items[i] = new CustomToolStripMenuItem(
+                value.GetString(),
+                getIconBitmap(value),
+                selection == value,
+                (sender, e) => onClick(this, sender)
             );
-            items.Add(item);
         }
-        DropDownItems.AddRange([.. items]);
+
+        DropDownItems.AddRange(items);
     }
 }

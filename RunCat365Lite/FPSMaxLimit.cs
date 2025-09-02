@@ -14,63 +14,71 @@
 //    limitations under the License.
 
 using System.Diagnostics.CodeAnalysis;
+using System.Runtime.InteropServices;
 
 namespace RunCat365Lite;
 
-internal enum FPSMaxLimit
+internal readonly record struct FpsMaxLimit(uint value) : IClosedEnum<FpsMaxLimit>
 {
-    FPS40,
-    FPS30,
-    FPS20,
-    FPS10,
-}
+    public const uint
+        Fps10 = 0,
+        Fps20 = 1,
+        Fps30 = 2,
+        Fps40 = 3;
 
-internal static class FPSMaxLimitExtension
-{
-    internal static string GetString(this FPSMaxLimit fpsMaxLimit)
+    private static ReadOnlySpan<uint> EnumerationValues => [
+        Fps10,
+        Fps20,
+        Fps30,
+        Fps40
+    ];
+
+    public uint Value => value;
+
+    public int GetIntervalMs()
     {
-        return fpsMaxLimit switch
+        const float rate = 50.0f;
+
+        return value switch
         {
-            FPSMaxLimit.FPS40 => "40fps",
-            FPSMaxLimit.FPS30 => "30fps",
-            FPSMaxLimit.FPS20 => "20fps",
-            FPSMaxLimit.FPS10 => "10fps",
+            Fps10 => (int)(rate / 0.25f),
+            Fps20 => (int)(rate / 0.5f),
+            Fps30 => (int)(rate / 0.75f),
+            Fps40 => (int)(rate / 1.0f),
+            _ =>     (int)(rate / 1.0f),
+        };
+    }
+
+    public string GetString()
+    {
+        return value switch
+        {
+            Fps10 => nameof(Fps10),
+            Fps20 => nameof(Fps20),
+            Fps30 => nameof(Fps30),
+            Fps40 => nameof(Fps40),
             _ => "",
         };
     }
 
-    internal static float GetRate(this FPSMaxLimit fPSMaxLimit)
+    public static bool TryParse([NotNullWhen(true)] string? value, out FpsMaxLimit result)
     {
-        return fPSMaxLimit switch
+        FpsMaxLimit? nullableResult = value switch
         {
-            FPSMaxLimit.FPS40 => 1f,
-            FPSMaxLimit.FPS30 => 0.75f,
-            FPSMaxLimit.FPS20 => 0.5f,
-            FPSMaxLimit.FPS10 => 0.25f,
-            _ => 1f,
-        };
-    }
-
-    internal static bool TryParse([NotNullWhen(true)] string? value, out FPSMaxLimit result)
-    {
-        FPSMaxLimit? nullableResult = value switch
-        {
-            "40fps" => FPSMaxLimit.FPS40,
-            "30fps" => FPSMaxLimit.FPS30,
-            "20fps" => FPSMaxLimit.FPS20,
-            "10fps" => FPSMaxLimit.FPS10,
+            nameof(Fps10) => Fps10,
+            nameof(Fps20) => Fps20,
+            nameof(Fps30) => Fps30,
+            nameof(Fps40) => Fps40,
             _ => null,
         };
 
-        if (nullableResult is FPSMaxLimit nonNullableResult)
-        {
-            result = nonNullableResult;
-            return true;
-        }
-        else
-        {
-            result = FPSMaxLimit.FPS40;
-            return false;
-        }
+        result = nullableResult.GetValueOrDefault();
+        return nullableResult.HasValue;
     }
+
+    public static ReadOnlySpan<FpsMaxLimit> GetValues() => MemoryMarshal.Cast<uint, FpsMaxLimit>(EnumerationValues);
+
+    public static implicit operator uint(FpsMaxLimit arg) => arg.Value;
+
+    public static implicit operator FpsMaxLimit(uint value) => new(value);
 }

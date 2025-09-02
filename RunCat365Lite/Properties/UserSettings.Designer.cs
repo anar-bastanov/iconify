@@ -37,7 +37,7 @@ namespace RunCat365Lite.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("System")]
         public string Theme {
             get {
                 return ((string)(this["Theme"]));
@@ -49,25 +49,25 @@ namespace RunCat365Lite.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("FPS40")]
-        public string FPSMaxLimit {
+        [global::System.Configuration.DefaultSettingValueAttribute("Fps40")]
+        public string FpsMaxLimit {
             get {
-                return ((string)(this["FPSMaxLimit"]));
+                return ((string)(this["FpsMaxLimit"]));
             }
             set {
-                this["FPSMaxLimit"] = value;
+                this["FpsMaxLimit"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool FirstLaunch {
+        public bool IsFirstLaunch {
             get {
-                return ((bool)(this["FirstLaunch"]));
+                return ((bool)(this["IsFirstLaunch"]));
             }
             set {
-                this["FirstLaunch"] = value;
+                this["IsFirstLaunch"] = value;
             }
         }
     }

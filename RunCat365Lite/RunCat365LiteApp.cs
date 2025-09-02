@@ -1,0 +1,168 @@
+﻿// Copyright 2025 Anar Bastanov
+// Copyright 2020 Takuto Nakamura
+//
+//    Licensed under the Apache License, Version 2.0 (the "License");
+//    you may not use this file except in compliance with the License.
+//    You may obtain a copy of the License at
+//
+//        http://www.apache.org/licenses/LICENSE-2.0
+//
+//    Unless required by applicable law or agreed to in writing, software
+//    distributed under the License is distributed on an "AS IS" BASIS,
+//    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//    See the License for the specific language governing permissions and
+//    limitations under the License.
+
+using Microsoft.Win32;
+using RunCat365Lite.Properties;
+using System.Diagnostics;
+
+using Timer = System.Windows.Forms.Timer;
+
+namespace RunCat365Lite;
+
+internal sealed class RunCat365LiteApp : ApplicationContext
+{
+    private readonly ContextMenuManager _contextMenuManager;
+
+    private Runner _runner;
+
+    private Theme _manualTheme;
+
+    private FpsMaxLimit _fpsMaxLimit;
+
+    private readonly Timer _animationTimer = new();
+
+    private bool _isDisposed = false;
+
+    public RunCat365LiteApp()
+    {
+        UserSettings.Default.Reload();
+
+        _ = Runner.TryParse(UserSettings.Default.Runner, out _runner);
+        _ = Theme.TryParse(UserSettings.Default.Theme, out _manualTheme);
+        _ = FpsMaxLimit.TryParse(UserSettings.Default.FpsMaxLimit, out _fpsMaxLimit);
+
+        SystemEvents.UserPreferenceChanged += UserPreferenceChanged;
+
+        _contextMenuManager = new ContextMenuManager(
+            () => _runner,
+            ChangeRunner,
+            GetSystemTheme,
+            () => _manualTheme,
+            ChangeManualTheme,
+            () => _fpsMaxLimit,
+            ChangeFPSMaxLimit,
+            StartupAppManager.GetStartup,
+            StartupAppManager.SetStartup,
+            OpenRepository,
+            Application.Exit
+        );
+
+        _animationTimer.Tick += AnimationTick;
+        _animationTimer.Interval = _fpsMaxLimit.GetIntervalMs();
+        _animationTimer.Start();
+
+        ShowBalloonTip();
+    }
+
+    private void UserPreferenceChanged(object sender, UserPreferenceChangedEventArgs e)
+    {
+        if (e.Category is not UserPreferenceCategory.General)
+            return; 
+
+        var systemTheme = GetSystemTheme();
+        _contextMenuManager.SetIcons(systemTheme, _manualTheme, _runner);
+    }
+
+    private static Theme GetSystemTheme()
+    {
+        using var rKey = Registry.CurrentUser.OpenSubKey(AppStrings.RegistryNamePersonalization);
+        object? value = rKey?.GetValue(AppStrings.RegistryKeyIsLightTheme);
+
+        return value is 0 ? Theme.Dark : Theme.Light;
+    }
+
+    private void ChangeRunner(Runner value)
+    {
+        UserSettings.Default.Runner = value.GetString();
+        UserSettings.Default.Save();
+
+        _runner = value;
+    }
+
+    private void ChangeManualTheme(Theme value)
+    {
+        UserSettings.Default.Theme = value.GetString();
+        UserSettings.Default.Save();
+
+        _manualTheme = value;
+    }
+
+    private void ChangeFPSMaxLimit(FpsMaxLimit value)
+    {
+        UserSettings.Default.FpsMaxLimit = value.GetString();
+        UserSettings.Default.Save();
+
+        _fpsMaxLimit = value;
+
+        _animationTimer.Stop();
+        _animationTimer.Interval = value.GetIntervalMs();
+        _animationTimer.Start();
+    }
+
+    private void ShowBalloonTip()
+    {
+        if (!UserSettings.Default.IsFirstLaunch)
+            return;
+
+        UserSettings.Default.IsFirstLaunch = false;
+        UserSettings.Default.Save();
+
+        _contextMenuManager.ShowBalloonTip();
+    }
+
+    private void AnimationTick(object? sender, EventArgs e)
+    {
+        _contextMenuManager.AdvanceFrame();
+    }
+
+    protected override void Dispose(bool disposing)
+    {
+        if (!_isDisposed && disposing)
+        {
+            SystemEvents.UserPreferenceChanged -= UserPreferenceChanged;
+
+            _animationTimer.Tick -= AnimationTick;
+            _animationTimer.Stop();
+            _animationTimer.Dispose();
+
+            _contextMenuManager.Dispose();
+        }
+
+        _isDisposed = true;
+        base.Dispose(disposing);
+    }
+
+    private static void OpenRepository()
+    {
+        try
+        {
+            Process.Start(new ProcessStartInfo()
+            {
+                FileName = AppStrings.RepositoryLink,
+                UseShellExecute = true
+            });
+        }
+#if DEBUG
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"Failed to open repository: {ex}");
+        }
+#else
+        catch
+        {
+        }
+#endif
+    }
+}

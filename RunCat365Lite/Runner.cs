@@ -13,36 +13,65 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 
+using System.Diagnostics.CodeAnalysis;
+using System.Runtime.InteropServices;
+
 namespace RunCat365Lite;
 
-enum Runner
+internal readonly record struct Runner(uint value) : IClosedEnum<Runner>
 {
-    Cat,
-    Parrot,
-    Horse,
-}
+    public const uint
+        Cat = 0,
+        Parrot = 1,
+        Horse = 2;
 
-internal static class RunnerExtension
-{
-    internal static string GetString(this Runner runner)
+    private static ReadOnlySpan<uint> EnumerationValues => [
+        Cat,
+        Parrot,
+        Horse,
+    ];
+
+    public uint Value => value;
+
+    public int GetFrameNumber()
     {
-        return runner switch
+        return value switch
         {
-            Runner.Cat => "Cat",
-            Runner.Parrot => "Parrot",
-            Runner.Horse => "Horse",
+            Cat => 5,
+            Parrot => 10,
+            Horse => 14,
+            _ => 0,
+        };
+    }
+
+    public string GetString()
+    {
+        return value switch
+        {
+            Cat => nameof(Cat),
+            Parrot => nameof(Parrot),
+            Horse => nameof(Horse),
             _ => "",
         };
     }
 
-    internal static int GetFrameNumber(this Runner runner)
+    public static bool TryParse([NotNullWhen(true)] string? value, out Runner result)
     {
-        return runner switch
+        Runner? nullableResult = value switch
         {
-            Runner.Cat => 5,
-            Runner.Parrot => 10,
-            Runner.Horse => 14,
-            _ => 0,
+            nameof(Cat) => Cat,
+            nameof(Parrot) => Parrot,
+            nameof(Horse) => Horse,
+            _ => null,
         };
+
+        result = nullableResult.GetValueOrDefault();
+        return nullableResult.HasValue;
     }
+
+    public static ReadOnlySpan<Runner> GetValues() => MemoryMarshal.Cast<uint, Runner>(EnumerationValues);
+
+    public static implicit operator uint(Runner arg) => arg.Value;
+
+    public static implicit operator Runner(uint value) => new(value);
 }
