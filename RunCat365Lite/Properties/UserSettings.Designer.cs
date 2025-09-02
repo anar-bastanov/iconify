@@ -49,13 +49,13 @@ namespace RunCat365Lite.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Fps40")]
-        public string FpsMaxLimit {
+        [global::System.Configuration.DefaultSettingValueAttribute("X100")]
+        public string Speed {
             get {
-                return ((string)(this["FpsMaxLimit"]));
+                return ((string)(this["Speed"]));
             }
             set {
-                this["FpsMaxLimit"] = value;
+                this["Speed"] = value;
             }
         }
         

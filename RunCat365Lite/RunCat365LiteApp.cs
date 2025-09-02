@@ -27,9 +27,9 @@ internal sealed class RunCat365LiteApp : ApplicationContext
 
     private Runner _runner;
 
-    private Theme _manualTheme;
+    private Theme _theme;
 
-    private FpsMaxLimit _fpsMaxLimit;
+    private Speed _speed;
 
     private readonly Timer _animationTimer = new();
 
@@ -40,27 +40,22 @@ internal sealed class RunCat365LiteApp : ApplicationContext
         UserSettings.Default.Reload();
 
         _ = Runner.TryParse(UserSettings.Default.Runner, out _runner);
-        _ = Theme.TryParse(UserSettings.Default.Theme, out _manualTheme);
-        _ = FpsMaxLimit.TryParse(UserSettings.Default.FpsMaxLimit, out _fpsMaxLimit);
+        _ = Theme.TryParse(UserSettings.Default.Theme, out _theme);
+        _ = Speed.TryParse(UserSettings.Default.Speed, out _speed);
 
         SystemEvents.UserPreferenceChanged += UserPreferenceChanged;
 
         _contextMenuManager = new ContextMenuManager(
-            () => _runner,
-            ChangeRunner,
-            GetSystemTheme,
-            () => _manualTheme,
-            ChangeManualTheme,
-            () => _fpsMaxLimit,
-            ChangeFPSMaxLimit,
-            StartupAppManager.GetStartup,
-            StartupAppManager.SetStartup,
+            GetRunner, SetRunner,
+            GetSystemTheme, GetTheme, SetTheme,
+            GetSpeed, SetSpeed,
+            StartupAppManager.GetStartup, StartupAppManager.SetStartup,
             OpenRepository,
             Application.Exit
         );
 
         _animationTimer.Tick += AnimationTick;
-        _animationTimer.Interval = _fpsMaxLimit.GetIntervalMs();
+        _animationTimer.Interval = _speed.GetDelay();
         _animationTimer.Start();
 
         ShowBalloonTip();
@@ -72,7 +67,7 @@ internal sealed class RunCat365LiteApp : ApplicationContext
             return; 
 
         var systemTheme = GetSystemTheme();
-        _contextMenuManager.SetIcons(systemTheme, _manualTheme, _runner);
+        _contextMenuManager.SetIcons(systemTheme, _theme, _runner);
     }
 
     private static Theme GetSystemTheme()
@@ -83,7 +78,12 @@ internal sealed class RunCat365LiteApp : ApplicationContext
         return value is 0 ? Theme.Dark : Theme.Light;
     }
 
-    private void ChangeRunner(Runner value)
+    private Runner GetRunner()
+    {
+        return _runner;
+    }
+
+    private void SetRunner(Runner value)
     {
         UserSettings.Default.Runner = value.GetString();
         UserSettings.Default.Save();
@@ -91,24 +91,39 @@ internal sealed class RunCat365LiteApp : ApplicationContext
         _runner = value;
     }
 
-    private void ChangeManualTheme(Theme value)
+    private Theme GetTheme()
+    {
+        return _theme;
+    }
+
+    private void SetTheme(Theme value)
     {
         UserSettings.Default.Theme = value.GetString();
         UserSettings.Default.Save();
 
-        _manualTheme = value;
+        _theme = value;
     }
 
-    private void ChangeFPSMaxLimit(FpsMaxLimit value)
+    private Speed GetSpeed()
     {
-        UserSettings.Default.FpsMaxLimit = value.GetString();
+        return _speed;
+    }
+
+    private void SetSpeed(Speed value)
+    {
+        UserSettings.Default.Speed = value.GetString();
         UserSettings.Default.Save();
 
-        _fpsMaxLimit = value;
+        _speed = value;
 
         _animationTimer.Stop();
-        _animationTimer.Interval = value.GetIntervalMs();
+        _animationTimer.Interval = value.GetDelay();
         _animationTimer.Start();
+    }
+
+    private void AnimationTick(object? sender, EventArgs e)
+    {
+        _contextMenuManager.AdvanceFrame();
     }
 
     private void ShowBalloonTip()
@@ -120,11 +135,6 @@ internal sealed class RunCat365LiteApp : ApplicationContext
         UserSettings.Default.Save();
 
         _contextMenuManager.ShowBalloonTip();
-    }
-
-    private void AnimationTick(object? sender, EventArgs e)
-    {
-        _contextMenuManager.AdvanceFrame();
     }
 
     protected override void Dispose(bool disposing)

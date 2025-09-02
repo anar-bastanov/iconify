@@ -8,8 +8,8 @@
     <Setting Name="Theme" Type="System.String" Scope="User">
       <Value Profile="(Default)">System</Value>
     </Setting>
-    <Setting Name="FpsMaxLimit" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Fps40</Value>
+    <Setting Name="Speed" Type="System.String" Scope="User">
+      <Value Profile="(Default)">X100</Value>
     </Setting>
     <Setting Name="IsFirstLaunch" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>

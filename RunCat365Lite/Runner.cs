@@ -21,9 +21,9 @@ namespace RunCat365Lite;
 internal readonly record struct Runner(uint value) : IClosedEnum<Runner>
 {
     public const uint
-        Cat = 0,
+        Cat    = 0,
         Parrot = 1,
-        Horse = 2;
+        Horse  = 2;
 
     private static ReadOnlySpan<uint> EnumerationValues => [
         Cat,
@@ -35,12 +35,14 @@ internal readonly record struct Runner(uint value) : IClosedEnum<Runner>
 
     public int GetFrameNumber()
     {
+        // Hardcoded values depending on total number of sprites present
+        // in resources per animation
         return value switch
         {
-            Cat => 5,
+            Cat    => 5,
             Parrot => 10,
-            Horse => 14,
-            _ => 0,
+            Horse  => 14,
+            _      => 0,
         };
     }
 
@@ -48,10 +50,10 @@ internal readonly record struct Runner(uint value) : IClosedEnum<Runner>
     {
         return value switch
         {
-            Cat => nameof(Cat),
+            Cat    => nameof(Cat),
             Parrot => nameof(Parrot),
-            Horse => nameof(Horse),
-            _ => "",
+            Horse  => nameof(Horse),
+            _      => "",
         };
     }
 
@@ -59,19 +61,22 @@ internal readonly record struct Runner(uint value) : IClosedEnum<Runner>
     {
         Runner? nullableResult = value switch
         {
-            nameof(Cat) => Cat,
+            nameof(Cat)    => Cat,
             nameof(Parrot) => Parrot,
-            nameof(Horse) => Horse,
-            _ => null,
+            nameof(Horse)  => Horse,
+            _              => null,
         };
 
         result = nullableResult.GetValueOrDefault();
         return nullableResult.HasValue;
     }
 
-    public static ReadOnlySpan<Runner> GetValues() => MemoryMarshal.Cast<uint, Runner>(EnumerationValues);
+    public static ReadOnlySpan<Runner> GetValues()
+    {
+        return MemoryMarshal.Cast<uint, Runner>(EnumerationValues);
+    }
 
-    public static implicit operator uint(Runner arg) => arg.Value;
+    public static implicit operator uint(Runner runner) => runner.Value;
 
     public static implicit operator Runner(uint value) => new(value);
 }

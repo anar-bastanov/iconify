@@ -31,15 +31,10 @@ internal sealed class ContextMenuManager : IDisposable
     private int _currentIconIndex = 0;
 
     public ContextMenuManager(
-        Func<Runner> getRunner,
-        Action<Runner> setRunner,
-        Func<Theme> getSystemTheme,
-        Func<Theme> getManualTheme,
-        Action<Theme> setManualTheme,
-        Func<FpsMaxLimit> getFPSMaxLimit,
-        Action<FpsMaxLimit> setFPSMaxLimit,
-        Func<bool> getLaunchAtStartup,
-        Func<bool, bool> setLaunchAtStartup,
+        Func<Runner> getRunner, Action<Runner> setRunner,
+        Func<Theme> getSystemTheme, Func<Theme> getTheme, Action<Theme> setTheme,
+        Func<Speed> getSpeed, Action<Speed> setSpeed,
+        Func<bool> getStartup, Func<bool, bool> setStartup,
         Action openRepository,
         Action onExit
     )
@@ -47,8 +42,8 @@ internal sealed class ContextMenuManager : IDisposable
         var runnersMenu = new CustomToolStripMenuItem("Runners");
         var settingsMenu = new CustomToolStripMenuItem("Settings");
         var themeMenu = new CustomToolStripMenuItem("Theme");
-        var fpsMaxLimitMenu = new CustomToolStripMenuItem("FPS limit");
-        var launchAtStartupMenu = new CustomToolStripMenuItem("Launch at startup");
+        var speedMenu = new CustomToolStripMenuItem("Speed");
+        var startupMenu = new CustomToolStripMenuItem("Launch at startup");
         var informationMenu = new CustomToolStripMenuItem("Information");
         var appVersionMenu = new CustomToolStripMenuItem($"{Application.ProductName} v{Application.ProductVersion}");
         var repositoryMenu = new CustomToolStripMenuItem("Open repository");
@@ -57,8 +52,8 @@ internal sealed class ContextMenuManager : IDisposable
 
         settingsMenu.DropDownItems.AddRange(
             themeMenu,
-            fpsMaxLimitMenu,
-            launchAtStartupMenu
+            speedMenu,
+            startupMenu
         );
 
         informationMenu.DropDownItems.AddRange(
@@ -81,7 +76,7 @@ internal sealed class ContextMenuManager : IDisposable
             {
                 HandleMenuItemSelection(parent, sender, setRunner);
 
-                SetIcons(getSystemTheme(), getManualTheme(), getRunner());
+                SetIcons(getSystemTheme(), getTheme(), getRunner());
             },
             getRunner(),
             r => GetRunnerThumbnailBitmap(getSystemTheme(), r)
@@ -90,25 +85,25 @@ internal sealed class ContextMenuManager : IDisposable
         themeMenu.SetupSubMenusFromEnum(
             (parent, sender) =>
             {
-                HandleMenuItemSelection(parent, sender, setManualTheme);
+                HandleMenuItemSelection(parent, sender, setTheme);
 
-                SetIcons(getSystemTheme(), getManualTheme(), getRunner());
+                SetIcons(getSystemTheme(), getTheme(), getRunner());
             },
-            getManualTheme(),
+            getTheme(),
             _ => null
         );
 
-        fpsMaxLimitMenu.SetupSubMenusFromEnum(
+        speedMenu.SetupSubMenusFromEnum(
             (parent, sender) =>
             {
-                HandleMenuItemSelection(parent, sender, setFPSMaxLimit);
+                HandleMenuItemSelection(parent, sender, setSpeed);
             },
-            getFPSMaxLimit(),
+            getSpeed(),
             _ => null
         );
 
-        launchAtStartupMenu.Checked = getLaunchAtStartup();
-        launchAtStartupMenu.Click += (sender, _) => HandleStartupMenuClick(sender, setLaunchAtStartup);
+        startupMenu.Checked = getStartup();
+        startupMenu.Click += (sender, _) => HandleStartupMenuClick(sender, setStartup);
 
         appVersionMenu.Enabled = false;
 
@@ -118,13 +113,12 @@ internal sealed class ContextMenuManager : IDisposable
 
         contextMenuStrip.Renderer = new ContextMenuRenderer();
 
-        SetIcons(getSystemTheme(), getManualTheme(), getRunner());
+        SetIcons(getSystemTheme(), getTheme(), getRunner());
 
         _notifyIcon.Text = AppStrings.ApplicationName;
         _notifyIcon.Icon = _icons![0];
         _notifyIcon.Visible = true;
         _notifyIcon.ContextMenuStrip = contextMenuStrip;
-
     }
 
     private static void HandleMenuItemSelection<T>(
@@ -153,11 +147,11 @@ internal sealed class ContextMenuManager : IDisposable
         return icon?.ToBitmap();
     }
 
-    public void SetIcons(Theme systemTheme, Theme manualTheme, Runner runner)
+    public void SetIcons(Theme systemTheme, Theme theme, Runner runner)
     {
         var rm = Resources.ResourceManager;
 
-        string prefix = (manualTheme == Theme.System ? systemTheme : manualTheme).GetString();
+        string prefix = (theme == Theme.System ? systemTheme : theme).GetString();
         string runnerName = runner.GetString();
         int capacity = runner.GetFrameNumber();
         var list = new List<Icon>(capacity);
@@ -180,14 +174,14 @@ internal sealed class ContextMenuManager : IDisposable
         }
     }
 
-    private static void HandleStartupMenuClick(object? sender, Func<bool, bool> setLaunchAtStartup)
+    private static void HandleStartupMenuClick(object? sender, Func<bool, bool> setStartup)
     {
         if (sender is not ToolStripMenuItem item)
             return;
 
         try
         {
-            bool success = setLaunchAtStartup(!item.Checked);
+            bool success = setStartup(!item.Checked);
             item.Checked ^= success;
         }
         catch (InvalidOperationException ex)

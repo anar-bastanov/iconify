@@ -48,7 +48,6 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="CustomToolStripMenuItem.cs" />
   </ItemGroup>
 
   <ItemGroup>
