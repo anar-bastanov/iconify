@@ -40,9 +40,10 @@ internal sealed class ContextMenuManager : IDisposable
     )
     {
         var runnersMenu = new CustomToolStripMenuItem("Runners");
+        var upcomingItemsMenu = new CustomToolStripMenuItem($"More soon");
         var settingsMenu = new CustomToolStripMenuItem("Settings");
         var themeMenu = new CustomToolStripMenuItem("Theme");
-        var speedMenu = new CustomToolStripMenuItem("Speed");
+        var speedMenu = new CustomToolStripMenuItem("Animation speed");
         var startupMenu = new CustomToolStripMenuItem("Launch at startup");
         var informationMenu = new CustomToolStripMenuItem("Information");
         var appVersionMenu = new CustomToolStripMenuItem($"{Application.ProductName} v{Application.ProductVersion}");
@@ -101,6 +102,9 @@ internal sealed class ContextMenuManager : IDisposable
             getSpeed(),
             _ => null
         );
+
+        upcomingItemsMenu.Enabled = false;
+        runnersMenu.DropDownItems.Add(upcomingItemsMenu);
 
         startupMenu.Checked = getStartup();
         startupMenu.Click += (sender, _) => HandleStartupMenuClick(sender, setStartup);

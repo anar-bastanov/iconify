@@ -49,7 +49,7 @@ internal readonly record struct Speed(uint value) : IClosedEnum<Speed>
             X100 => (int)(interval / 1.00f),
             X150 => (int)(interval / 1.50f),
             X200 => (int)(interval / 2.00f),
-            _    => (int)(interval / 1.00f),
+            _    => (int)(interval / 1.00f)
         };
     }
 
@@ -62,7 +62,7 @@ internal readonly record struct Speed(uint value) : IClosedEnum<Speed>
             X100 => "100%",
             X150 => "150%",
             X200 => "200%",
-            _    => "",
+            _    => ""
         };
     }
 
@@ -75,7 +75,7 @@ internal readonly record struct Speed(uint value) : IClosedEnum<Speed>
             "100%" => X100,
             "150%" => X150,
             "200%" => X200,
-            _      => null,
+            _      => null
         };
 
         result = nullableResult.GetValueOrDefault();

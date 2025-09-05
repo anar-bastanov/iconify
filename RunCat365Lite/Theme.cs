@@ -28,7 +28,7 @@ internal readonly record struct Theme(uint value) : IClosedEnum<Theme>
     private static ReadOnlySpan<uint> EnumerationValues => [
         System,
         Light,
-        Dark,
+        Dark
     ];
 
     public uint Value => value;
@@ -40,7 +40,7 @@ internal readonly record struct Theme(uint value) : IClosedEnum<Theme>
             System => nameof(System),
             Light  => nameof(Light),
             Dark   => nameof(Dark),
-            _      => "",
+            _      => ""
         };
     }
 
@@ -51,7 +51,7 @@ internal readonly record struct Theme(uint value) : IClosedEnum<Theme>
             nameof(System) => System,
             nameof(Light)  => Light,
             nameof(Dark)   => Dark,
-            _              => null,
+            _              => null
         };
 
         result = nullableResult.GetValueOrDefault();

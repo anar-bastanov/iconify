@@ -21,14 +21,10 @@ namespace RunCat365Lite;
 internal readonly record struct Runner(uint value) : IClosedEnum<Runner>
 {
     public const uint
-        Cat    = 0,
-        Parrot = 1,
-        Horse  = 2;
+        Cat = 0;
 
     private static ReadOnlySpan<uint> EnumerationValues => [
-        Cat,
-        Parrot,
-        Horse,
+        Cat
     ];
 
     public uint Value => value;
@@ -39,10 +35,8 @@ internal readonly record struct Runner(uint value) : IClosedEnum<Runner>
         // in resources per animation
         return value switch
         {
-            Cat    => 5,
-            Parrot => 10,
-            Horse  => 14,
-            _      => 0,
+            Cat => 5,
+            _   => 0
         };
     }
 
@@ -50,10 +44,8 @@ internal readonly record struct Runner(uint value) : IClosedEnum<Runner>
     {
         return value switch
         {
-            Cat    => nameof(Cat),
-            Parrot => nameof(Parrot),
-            Horse  => nameof(Horse),
-            _      => "",
+            Cat => nameof(Cat),
+            _   => ""
         };
     }
 
@@ -61,10 +53,8 @@ internal readonly record struct Runner(uint value) : IClosedEnum<Runner>
     {
         Runner? nullableResult = value switch
         {
-            nameof(Cat)    => Cat,
-            nameof(Parrot) => Parrot,
-            nameof(Horse)  => Horse,
-            _              => null,
+            nameof(Cat) => Cat,
+            _           => null
         };
 
         result = nullableResult.GetValueOrDefault();
