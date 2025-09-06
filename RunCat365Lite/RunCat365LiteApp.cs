@@ -39,6 +39,8 @@ internal sealed class RunCat365LiteApp : ApplicationContext
     {
         UserSettings.Default.Reload();
 
+        HandleFirstLaunch();
+
         _ = Runner.TryParse(UserSettings.Default.Runner, out _runner);
         _ = Theme.TryParse(UserSettings.Default.Theme, out _theme);
         _ = Speed.TryParse(UserSettings.Default.Speed, out _speed);
@@ -58,7 +60,7 @@ internal sealed class RunCat365LiteApp : ApplicationContext
         _animationTimer.Interval = _speed.GetDelay();
         _animationTimer.Start();
 
-        ShowBalloonTip();
+        HandleFirstLaunch();
     }
 
     private void UserPreferenceChanged(object sender, UserPreferenceChangedEventArgs e)
@@ -126,13 +128,15 @@ internal sealed class RunCat365LiteApp : ApplicationContext
         _contextMenuManager.AdvanceFrame();
     }
 
-    private void ShowBalloonTip()
+    private void HandleFirstLaunch()
     {
         if (!UserSettings.Default.IsFirstLaunch)
             return;
 
         UserSettings.Default.IsFirstLaunch = false;
         UserSettings.Default.Save();
+
+        StartupAppManager.SetStartup(true);
 
         _contextMenuManager.ShowBalloonTip();
     }

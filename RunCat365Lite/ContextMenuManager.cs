@@ -200,7 +200,7 @@ internal sealed class ContextMenuManager : IDisposable
             "App has launched. If the icon is not on the taskbar, " +
             "it has been omitted. Please move it manually and pin it.";
 
-        _notifyIcon.ShowBalloonTip(10000, AppStrings.ApplicationName, message, ToolTipIcon.Info);
+        _notifyIcon.ShowBalloonTip(30000, AppStrings.ApplicationName, message, ToolTipIcon.Info);
     }
 
     public void AdvanceFrame()
