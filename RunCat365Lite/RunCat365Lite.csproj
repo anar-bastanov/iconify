@@ -36,7 +36,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\res\app\app_icon.png">
+    <None Include="..\res\app_icon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

@@ -49,7 +49,7 @@ namespace RunCat365Lite.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("X100")]
+        [global::System.Configuration.DefaultSettingValueAttribute("100%")]
         public string Speed {
             get {
                 return ((string)(this["Speed"]));
