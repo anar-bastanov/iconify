@@ -73,6 +73,66 @@ namespace RunCat365Lite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
+        internal static System.Drawing.Icon dark_bird_0 {
+            get {
+                object obj = ResourceManager.GetObject("dark_bird_0", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon dark_bird_1 {
+            get {
+                object obj = ResourceManager.GetObject("dark_bird_1", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon dark_bird_2 {
+            get {
+                object obj = ResourceManager.GetObject("dark_bird_2", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon dark_bird_3 {
+            get {
+                object obj = ResourceManager.GetObject("dark_bird_3", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon dark_bird_4 {
+            get {
+                object obj = ResourceManager.GetObject("dark_bird_4", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon dark_bird_5 {
+            get {
+                object obj = ResourceManager.GetObject("dark_bird_5", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
         internal static System.Drawing.Icon dark_cat_0 {
             get {
                 object obj = ResourceManager.GetObject("dark_cat_0", resourceCulture);
@@ -216,6 +276,66 @@ namespace RunCat365Lite.Properties {
         internal static System.Drawing.Icon dark_yinyang_7 {
             get {
                 object obj = ResourceManager.GetObject("dark_yinyang_7", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon light_bird_0 {
+            get {
+                object obj = ResourceManager.GetObject("light_bird_0", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon light_bird_1 {
+            get {
+                object obj = ResourceManager.GetObject("light_bird_1", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon light_bird_2 {
+            get {
+                object obj = ResourceManager.GetObject("light_bird_2", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon light_bird_3 {
+            get {
+                object obj = ResourceManager.GetObject("light_bird_3", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon light_bird_4 {
+            get {
+                object obj = ResourceManager.GetObject("light_bird_4", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon light_bird_5 {
+            get {
+                object obj = ResourceManager.GetObject("light_bird_5", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }

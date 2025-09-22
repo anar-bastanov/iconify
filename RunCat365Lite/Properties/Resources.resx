@@ -121,6 +121,24 @@
   <data name="AppIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\app_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dark_bird_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\dark_bird_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_bird_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\dark_bird_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_bird_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\dark_bird_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_bird_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\dark_bird_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_bird_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\dark_bird_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_bird_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\dark_bird_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dark_cat_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\runners\cat\dark_cat_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -165,6 +183,24 @@
   </data>
   <data name="dark_yinyang_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\runners\yinyang\dark_yinyang_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_bird_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\light_bird_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_bird_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\light_bird_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_bird_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\light_bird_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_bird_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\light_bird_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_bird_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\light_bird_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_bird_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\light_bird_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="light_cat_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\runners\cat\light_cat_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
