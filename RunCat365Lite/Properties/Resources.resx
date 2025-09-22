@@ -136,6 +136,36 @@
   <data name="dark_cat_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\runners\cat\dark_cat_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dark_cat_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cat\dark_cat_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_cat_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cat\dark_cat_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_yinyang_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\dark_yinyang_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_yinyang_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\dark_yinyang_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_yinyang_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\dark_yinyang_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_yinyang_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\dark_yinyang_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_yinyang_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\dark_yinyang_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_yinyang_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\dark_yinyang_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_yinyang_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\dark_yinyang_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_yinyang_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\dark_yinyang_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="light_cat_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\runners\cat\light_cat_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -150,5 +180,35 @@
   </data>
   <data name="light_cat_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\runners\cat\light_cat_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_cat_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cat\light_cat_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_cat_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cat\light_cat_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_yinyang_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\light_yinyang_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_yinyang_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\light_yinyang_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_yinyang_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\light_yinyang_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_yinyang_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\light_yinyang_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_yinyang_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\light_yinyang_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_yinyang_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\light_yinyang_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_yinyang_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\light_yinyang_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_yinyang_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\light_yinyang_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
