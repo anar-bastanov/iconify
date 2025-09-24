@@ -21,17 +21,17 @@ namespace RunCat365Lite;
 internal readonly record struct Speed(uint value) : IClosedEnum<Speed>
 {
     public const uint
-        X050 = 0,
-        X075 = 1,
-        X100 = 2,
-        X150 = 3,
+        X100 = 0,
+        X125 = 1,
+        X150 = 2,
+        X175 = 3,
         X200 = 4;
 
     private static ReadOnlySpan<uint> EnumerationValues => [
-        X050,
-        X075,
         X100,
+        X125,
         X150,
+        X175,
         X200
     ];
 
@@ -44,10 +44,10 @@ internal readonly record struct Speed(uint value) : IClosedEnum<Speed>
 
         return value switch
         {
-            X050 => (int)(interval / 0.50f),
-            X075 => (int)(interval / 0.75f),
             X100 => (int)(interval / 1.00f),
+            X125 => (int)(interval / 1.25f),
             X150 => (int)(interval / 1.50f),
+            X175 => (int)(interval / 1.75f),
             X200 => (int)(interval / 2.00f),
             _    => (int)(interval / 1.00f)
         };
@@ -57,10 +57,10 @@ internal readonly record struct Speed(uint value) : IClosedEnum<Speed>
     {
         return value switch
         {
-            X050 =>  "50%",
-            X075 =>  "75%",
             X100 => "100%",
+            X125 => "125%",
             X150 => "150%",
+            X175 => "175%",
             X200 => "200%",
             _    => ""
         };
@@ -70,10 +70,10 @@ internal readonly record struct Speed(uint value) : IClosedEnum<Speed>
     {
         Speed? nullableResult = value switch
         {
-             "50%" => X050,
-             "75%" => X075,
             "100%" => X100,
+            "125%" => X125,
             "150%" => X150,
+            "175%" => X175,
             "200%" => X200,
             _      => null
         };
