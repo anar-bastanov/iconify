@@ -15,7 +15,7 @@
 
 using System.Text.RegularExpressions;
 
-namespace RunCat365Lite;
+namespace Iconify;
 
 internal partial class CustomToolStripMenuItem : ToolStripMenuItem
 {
@@ -97,9 +97,9 @@ internal partial class CustomToolStripMenuItem : ToolStripMenuItem
         }
 
         DropDownItems.AddRange(items);
-    }
 
-    static string ToTitleCase(string name) => TitleCaseRegex().Replace(name, " $1");
+        static string ToTitleCase(string name) => TitleCaseRegex().Replace(name, " $1");
+    }
 
     [GeneratedRegex(@"(?<=[a-z])([A-Z])")]
     private static partial Regex TitleCaseRegex();

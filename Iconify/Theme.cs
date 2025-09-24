@@ -16,7 +16,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 
-namespace RunCat365Lite;
+namespace Iconify;
 
 internal readonly record struct Theme(uint value) : IClosedEnum<Theme>
 {

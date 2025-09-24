@@ -13,12 +13,13 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 
-using RunCat365Lite.Properties;
+using Iconify.Properties;
 using System.ComponentModel;
+using System.Text.RegularExpressions;
 
-namespace RunCat365Lite;
+namespace Iconify;
 
-internal sealed class ContextMenuManager : IDisposable
+internal sealed partial class ContextMenuManager : IDisposable
 {
     private delegate bool CustomTryParseDelegate<T>(string? value, out T result);
 
@@ -139,8 +140,10 @@ internal sealed class ContextMenuManager : IDisposable
 
         item.Checked = true;
 
-        if (T.TryParse(item.Text, out T parsedValue))
+        if (item.Text is not null && T.TryParse(ToPascalCase(item.Text), out T parsedValue))
             assignValue(parsedValue);
+
+        static string? ToPascalCase(string name) => PascalCaseRegex().Replace(name, "$2");
     }
 
     private static Bitmap? GetRunnerThumbnailBitmap(Theme systemTheme, Runner runner)
@@ -234,4 +237,7 @@ internal sealed class ContextMenuManager : IDisposable
 
         GC.SuppressFinalize(this);
     }
+
+    [GeneratedRegex(@"(?<=[a-z])( ([A-Z]))")]
+    private static partial Regex PascalCaseRegex();
 }

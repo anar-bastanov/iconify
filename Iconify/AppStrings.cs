@@ -1,5 +1,4 @@
 ﻿// Copyright 2025 Anar Bastanov
-// Copyright 2020 Takuto Nakamura
 //
 //    Licensed under the Apache License, Version 2.0 (the "License");
 //    you may not use this file except in compliance with the License.
@@ -13,28 +12,19 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 
-namespace RunCat365Lite;
+global using AppStrings = Iconify.ApplicationStrings;
 
-internal static class Program
+namespace Iconify;
+
+public static class ApplicationStrings
 {
-    [STAThread]
-    private static void Main()
-    {
-        // Terminate RunCat 365 Lite if there is any existing instance.
-        using var processMutex = new Mutex(true, "_RUNCATLITE_MUTEX", out bool result);
+    public const string RepositoryLink = "https://github.com/anar-bastanov/iconify";
 
-        if (!result)
-            return;
+    public const string RegistryNamePersonalization = @"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize";
 
-        try
-        {
-            ApplicationConfiguration.Initialize();
-            Application.SetColorMode(SystemColorMode.System);
-            Application.Run(new RunCat365LiteApp());
-        }
-        finally
-        {
-            processMutex.ReleaseMutex();
-        }
-    }
+    public const string RegistryNameStartupApps = @"Software\Microsoft\Windows\CurrentVersion\Run";
+
+    public const string RegistryKeyIsLightTheme = "SystemUsesLightTheme";
+
+    public static readonly string ApplicationName = Application.ProductName!;
 }

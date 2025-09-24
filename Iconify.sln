@@ -1,8 +1,9 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36301.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunCat365Lite", "RunCat365Lite\RunCat365Lite.csproj", "{CE0ABB30-977D-4DBC-8B69-EC9D6BD72000}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iconify", "Iconify\Iconify.csproj", "{CE0ABB30-977D-4DBC-8B69-EC9D6BD72000}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

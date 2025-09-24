@@ -15,7 +15,7 @@
 
 using Microsoft.Win32;
 
-namespace RunCat365Lite;
+namespace Iconify;
 
 internal static class StartupAppManager
 {

@@ -13,7 +13,7 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 
-namespace RunCat365Lite;
+namespace Iconify;
 
 internal sealed class ContextMenuRenderer : ToolStripProfessionalRenderer
 {

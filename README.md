@@ -1,12 +1,12 @@
-# RunCat 365 Lite
+# Iconify
 
-**A cute running cat animation on your Windows taskbar.**
+**Animated tray icons on your Windows taskbar.**
 
 Forked and stripped down from [RunCat 365](https://github.com/Kyome22/RunCat365) by [Kyome22](https://github.com/Kyome22), go give it a star!
 
 ## Features
 
-- Cat in the tray
+- Animations in the tray
 - Very lightweight
 - Not much else
 
@@ -16,9 +16,9 @@ Forked and stripped down from [RunCat 365](https://github.com/Kyome22/RunCat365)
 
 ## Installation
 
-Download and extract one of the archives below, then run `RunCat 365 Lite.exe`:
+Download and extract one of the archives below, then run `Iconify.exe`:
 
-| [Portable build](https://github.com/anar-bastanov/run-cat-365-lite/releases/latest/download/RunCat365Lite-portable-win-x64.zip) | [Framework-dependent build](https://github.com/anar-bastanov/run-cat-365-lite/releases/latest/download/RunCat365Lite-runtime-win-x64.zip) |
+| [Portable build](https://github.com/anar-bastanov/iconify/releases/latest/download/Iconify-portable-win-x64.zip) | [Framework-dependent build](https://github.com/anar-bastanov/iconify/releases/latest/download/Iconify-runtime-win-x64.zip) |
 |:-|:-|
 | Bigger download | Smaller download |
 | No .NET runtime required | Requires [.NET 9 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/9.0) |

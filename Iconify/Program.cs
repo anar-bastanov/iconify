@@ -1,4 +1,5 @@
 ﻿// Copyright 2025 Anar Bastanov
+// Copyright 2020 Takuto Nakamura
 //
 //    Licensed under the Apache License, Version 2.0 (the "License");
 //    you may not use this file except in compliance with the License.
@@ -12,19 +13,28 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 
-using System.Diagnostics.CodeAnalysis;
+namespace Iconify;
 
-namespace RunCat365Lite;
-
-internal interface IClosedEnum<TSelf> where TSelf : struct, IClosedEnum<TSelf> /*, IEquatable<TSelf>*/
+internal static class Program
 {
-    string GetString();
+    [STAThread]
+    private static void Main()
+    {
+        // Terminate Iconify if there is any existing instance.
+        using var processMutex = new Mutex(true, "_ICONIFY_MUTEX", out bool result);
 
-    static abstract bool TryParse([NotNullWhen(true)] string? value, out TSelf result);
+        if (!result)
+            return;
 
-    static abstract ReadOnlySpan<TSelf> GetValues();
-
-    static abstract bool operator ==(TSelf left, TSelf right);
-
-    static abstract bool operator !=(TSelf left, TSelf right);
+        try
+        {
+            ApplicationConfiguration.Initialize();
+            Application.SetColorMode(SystemColorMode.System);
+            Application.Run(new IconifyApp());
+        }
+        finally
+        {
+            processMutex.ReleaseMutex();
+        }
+    }
 }

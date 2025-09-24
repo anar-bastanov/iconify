@@ -14,14 +14,14 @@
 //    limitations under the License.
 
 using Microsoft.Win32;
-using RunCat365Lite.Properties;
+using Iconify.Properties;
 using System.Diagnostics;
 
 using Timer = System.Windows.Forms.Timer;
 
-namespace RunCat365Lite;
+namespace Iconify;
 
-internal sealed class RunCat365LiteApp : ApplicationContext
+internal sealed class IconifyApp : ApplicationContext
 {
     private readonly ContextMenuManager _contextMenuManager;
 
@@ -35,7 +35,7 @@ internal sealed class RunCat365LiteApp : ApplicationContext
 
     private bool _isDisposed = false;
 
-    public RunCat365LiteApp()
+    public IconifyApp()
     {
         UserSettings.Default.Reload();
 

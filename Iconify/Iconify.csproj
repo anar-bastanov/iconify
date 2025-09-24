@@ -7,23 +7,23 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <RootNamespace>RunCat365Lite</RootNamespace>
+    <RootNamespace>Iconify</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup>
-    <Description>A cute running cat animation on your taskbar.</Description>
+    <Description>Animated tray icons on your taskbar.</Description>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>app_icon.png</PackageIcon>
     <ApplicationIcon>resources\app_icon.ico</ApplicationIcon>
     <ApplicationManifest>App.manifest</ApplicationManifest>
-    <StartupObject>RunCat365Lite.Program</StartupObject>
+    <StartupObject>Iconify.Program</StartupObject>
     <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
     <NoWarn>$(NoWarn);WFO5001</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup>
-    <AssemblyName>RunCat 365 Lite</AssemblyName>
+    <AssemblyName>Iconify</AssemblyName>
     <Version>1.1.2</Version>
     <AssemblyVersion>1.1.2.0</AssemblyVersion>
     <FileVersion>1.1.2.0</FileVersion>

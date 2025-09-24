@@ -12,19 +12,19 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 
-global using AppStrings = RunCat365Lite.ApplicationStrings;
+using System.Diagnostics.CodeAnalysis;
 
-namespace RunCat365Lite;
+namespace Iconify;
 
-public static class ApplicationStrings
+internal interface IClosedEnum<TSelf> where TSelf : struct, IClosedEnum<TSelf> /*, IEquatable<TSelf>*/
 {
-    public const string RepositoryLink = "https://github.com/anar-bastanov/run-cat-365-lite";
+    string GetString();
 
-    public const string RegistryNamePersonalization = @"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize";
+    static abstract bool TryParse([NotNullWhen(true)] string? value, out TSelf result);
 
-    public const string RegistryNameStartupApps = @"Software\Microsoft\Windows\CurrentVersion\Run";
+    static abstract ReadOnlySpan<TSelf> GetValues();
 
-    public const string RegistryKeyIsLightTheme = "SystemUsesLightTheme";
+    static abstract bool operator ==(TSelf left, TSelf right);
 
-    public static readonly string ApplicationName = Application.ProductName!;
+    static abstract bool operator !=(TSelf left, TSelf right);
 }
