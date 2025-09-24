@@ -22,10 +22,18 @@ internal readonly record struct Runner(uint value) : IClosedEnum<Runner>
 {
     public const uint
         Cat     = 0,
-        YinYang = 1;
+        Bird    = 1,
+        Cloud   = 2,
+        Flame   = 3,
+        Eye     = 4,
+        YinYang = 5;
 
     private static ReadOnlySpan<uint> EnumerationValues => [
         Cat,
+        Bird,
+        Cloud,
+        Flame,
+        Eye,
         YinYang
     ];
 
@@ -37,7 +45,11 @@ internal readonly record struct Runner(uint value) : IClosedEnum<Runner>
         // in resources per animation
         return value switch
         {
-            Cat     => 4,
+            Cat     => 7,
+            Bird    => 6,
+            Cloud   => 24,
+            Flame   => 16,
+            Eye     => 35,
             YinYang => 8,
             _       => 0
         };
@@ -48,6 +60,10 @@ internal readonly record struct Runner(uint value) : IClosedEnum<Runner>
         return value switch
         {
             Cat     => nameof(Cat),
+            Bird    => nameof(Bird),
+            Cloud   => nameof(Cloud),
+            Flame   => nameof(Flame),
+            Eye     => nameof(Eye),
             YinYang => nameof(YinYang),
             _       => ""
         };
@@ -58,6 +74,10 @@ internal readonly record struct Runner(uint value) : IClosedEnum<Runner>
         Runner? nullableResult = value switch
         {
             nameof(Cat)     => Cat,
+            nameof(Bird)    => Bird,
+            nameof(Cloud)   => Cloud,
+            nameof(Flame)   => Flame,
+            nameof(Eye)     => Eye,
             nameof(YinYang) => YinYang,
             _               => null
         };
