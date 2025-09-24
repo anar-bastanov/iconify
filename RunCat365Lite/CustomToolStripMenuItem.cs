@@ -13,9 +13,11 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 
+using System.Text.RegularExpressions;
+
 namespace RunCat365Lite;
 
-internal class CustomToolStripMenuItem : ToolStripMenuItem
+internal partial class CustomToolStripMenuItem : ToolStripMenuItem
 {
     private const TextFormatFlags MultiLineTextFlags =
         TextFormatFlags.LeftAndRightPadding |
@@ -87,7 +89,7 @@ internal class CustomToolStripMenuItem : ToolStripMenuItem
             var value = values[i];
 
             items[i] = new CustomToolStripMenuItem(
-                value.GetString(),
+                ToTitleCase(value.GetString()),
                 getIconBitmap(value),
                 selection == value,
                 (sender, e) => onClick(this, sender)
@@ -96,4 +98,9 @@ internal class CustomToolStripMenuItem : ToolStripMenuItem
 
         DropDownItems.AddRange(items);
     }
+
+    static string ToTitleCase(string name) => TitleCaseRegex().Replace(name, " $1");
+
+    [GeneratedRegex(@"(?<=[a-z])([A-Z])")]
+    private static partial Regex TitleCaseRegex();
 }
