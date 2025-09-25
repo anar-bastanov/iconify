@@ -45,7 +45,7 @@ internal readonly record struct Runner(uint value) : IClosedEnum<Runner>
         // in resources per animation
         return value switch
         {
-            Cat     => 7,
+            Cat     => 5,
             Bird    => 6,
             Cloud   => 24,
             Flame   => 16,

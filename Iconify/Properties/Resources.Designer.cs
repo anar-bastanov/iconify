@@ -183,26 +183,6 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cat_5 {
-            get {
-                object obj = ResourceManager.GetObject("dark_cat_5", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon dark_cat_6 {
-            get {
-                object obj = ResourceManager.GetObject("dark_cat_6", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
         internal static System.Drawing.Icon dark_cloud_0 {
             get {
                 object obj = ResourceManager.GetObject("dark_cloud_0", resourceCulture);
@@ -1136,26 +1116,6 @@ namespace Iconify.Properties {
         internal static System.Drawing.Icon light_cat_4 {
             get {
                 object obj = ResourceManager.GetObject("light_cat_4", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cat_5 {
-            get {
-                object obj = ResourceManager.GetObject("light_cat_5", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cat_6 {
-            get {
-                object obj = ResourceManager.GetObject("light_cat_6", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
