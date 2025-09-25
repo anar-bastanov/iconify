@@ -12,7 +12,7 @@ Forked and stripped down from [RunCat 365](https://github.com/Kyome22/RunCat365)
 
 ## Preview
 
-![Preview](/res/preview.gif)
+![Preview](/res/iconify-thumbnail-480p.png)
 
 ## Installation
 
