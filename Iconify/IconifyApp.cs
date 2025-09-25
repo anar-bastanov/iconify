@@ -39,7 +39,10 @@ internal sealed class IconifyApp : ApplicationContext
     {
         UserSettings.Default.Reload();
 
-        HandleFirstLaunch();
+        bool isFirstLaunch = UserSettings.Default.IsFirstLaunch;
+
+        if (isFirstLaunch)
+            StartupAppManager.SetStartup(true);
 
         _ = Runner.TryParse(UserSettings.Default.Runner, out _runner);
         _ = Theme.TryParse(UserSettings.Default.Theme, out _theme);
@@ -60,7 +63,13 @@ internal sealed class IconifyApp : ApplicationContext
         _animationTimer.Interval = _speed.GetDelay();
         _animationTimer.Start();
 
-        HandleFirstLaunch();
+        if (isFirstLaunch)
+        {
+            UserSettings.Default.IsFirstLaunch = false;
+            UserSettings.Default.Save();
+
+            _contextMenuManager.ShowBalloonTip();
+        }
     }
 
     private void UserPreferenceChanged(object sender, UserPreferenceChangedEventArgs e)
@@ -126,19 +135,6 @@ internal sealed class IconifyApp : ApplicationContext
     private void AnimationTick(object? sender, EventArgs e)
     {
         _contextMenuManager.AdvanceFrame();
-    }
-
-    private void HandleFirstLaunch()
-    {
-        if (!UserSettings.Default.IsFirstLaunch)
-            return;
-
-        UserSettings.Default.IsFirstLaunch = false;
-        UserSettings.Default.Save();
-
-        StartupAppManager.SetStartup(true);
-
-        _contextMenuManager.ShowBalloonTip();
     }
 
     protected override void Dispose(bool disposing)
