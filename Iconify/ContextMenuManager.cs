@@ -37,13 +37,12 @@ internal sealed partial class ContextMenuManager : IDisposable
         Func<Speed> getSpeed, Action<Speed> setSpeed,
         Func<bool> getStartup, Func<bool, bool> setStartup,
         Action openRepository,
-        Action onExit
-    )
+        Action onExit)
     {
         var runnersMenu = new CustomToolStripMenuItem("Runners");
         var upcomingItemsMenu = new CustomToolStripMenuItem($"More soon");
         var settingsMenu = new CustomToolStripMenuItem("Settings");
-        var themeMenu = new CustomToolStripMenuItem("Theme");
+        var themeMenu = new CustomToolStripMenuItem("Accent color");
         var speedMenu = new CustomToolStripMenuItem("Animation speed");
         var startupMenu = new CustomToolStripMenuItem("Launch at startup");
         var informationMenu = new CustomToolStripMenuItem("Information");
@@ -55,13 +54,11 @@ internal sealed partial class ContextMenuManager : IDisposable
         settingsMenu.DropDownItems.AddRange(
             themeMenu,
             speedMenu,
-            startupMenu
-        );
+            startupMenu);
 
         informationMenu.DropDownItems.AddRange(
             appVersionMenu,
-            repositoryMenu
-        );
+            repositoryMenu);
 
         contextMenuStrip.Items.AddRange(
             new ToolStripSeparator(),
@@ -70,8 +67,7 @@ internal sealed partial class ContextMenuManager : IDisposable
             settingsMenu,
             informationMenu,
             new ToolStripSeparator(),
-            exitMenu
-        );
+            exitMenu);
 
         runnersMenu.SetupSubMenusFromEnum(
             (parent, sender) =>
@@ -81,8 +77,7 @@ internal sealed partial class ContextMenuManager : IDisposable
                 SetIcons(getSystemTheme(), getTheme(), getRunner());
             },
             getRunner(),
-            r => GetRunnerThumbnailBitmap(getSystemTheme(), r)
-        );
+            r => GetRunnerThumbnailBitmap(getSystemTheme(), r));
 
         themeMenu.SetupSubMenusFromEnum(
             (parent, sender) =>
@@ -92,8 +87,7 @@ internal sealed partial class ContextMenuManager : IDisposable
                 SetIcons(getSystemTheme(), getTheme(), getRunner());
             },
             getTheme(),
-            _ => null
-        );
+            _ => null);
 
         speedMenu.SetupSubMenusFromEnum(
             (parent, sender) =>
@@ -101,8 +95,7 @@ internal sealed partial class ContextMenuManager : IDisposable
                 HandleMenuItemSelection(parent, sender, setSpeed);
             },
             getSpeed(),
-            _ => null
-        );
+            _ => null);
 
         upcomingItemsMenu.Enabled = false;
         runnersMenu.DropDownItems.Add(upcomingItemsMenu);
@@ -129,8 +122,8 @@ internal sealed partial class ContextMenuManager : IDisposable
     private static void HandleMenuItemSelection<T>(
         ToolStripMenuItem parentMenu,
         object? sender,
-        Action<T> assignValue
-    ) where T : struct, IClosedEnum<T>
+        Action<T> assignValue)
+        where T : struct, IClosedEnum<T>
     {
         if (sender is not ToolStripMenuItem item)
             return;
@@ -158,18 +151,28 @@ internal sealed partial class ContextMenuManager : IDisposable
     {
         var rm = Resources.ResourceManager;
 
-        string prefix = (theme == Theme.System ? systemTheme : theme).GetString();
+        Theme baseTheme = theme.ResolveBaseTheme(systemTheme);
+        Color? accentColor = theme.IsAccentTheme() ? theme.GetAccentColor() : null;
+
+        string prefix = baseTheme.GetString();
         string runnerName = runner.GetString();
         int capacity = runner.GetFrameNumber();
         var list = new List<Icon>(capacity);
 
-        for (int i = 0; i < capacity; i++)
+        for (int i = 0; i < capacity; ++i)
         {
             string iconName = $"{prefix}_{runnerName}_{i}".ToLower();
 
-            if (rm.GetObject(iconName) is Icon icon)
-                list.Add(icon);
+            if (rm.GetObject(iconName) is Icon baseIcon)
+            {
+                list.Add(accentColor.HasValue ?
+                    IconColorizer.CreateTintedIcon(baseIcon, accentColor.Value) :
+                    (Icon)baseIcon.Clone());
+            }
         }
+
+        if (list.Count is 0)
+            return;
 
         lock (_iconLock)
         {

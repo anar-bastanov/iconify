@@ -21,26 +21,98 @@ namespace Iconify;
 internal readonly record struct Theme(uint value) : IClosedEnum<Theme>
 {
     public const uint
-        System = 0,
-        Light  = 1,
-        Dark   = 2;
+        System  = 0,
+        White   = 1,
+        Gray    = 2,
+        Black   = 3,
+
+        Red     = 10,
+        Orange  = 11,
+        Yellow  = 12,
+        Lime    = 13,
+        Green   = 14,
+        Teal    = 15,
+        Cyan    = 16,
+        Blue    = 17,
+        Purple  = 18,
+        Magenta = 19;
 
     private static ReadOnlySpan<uint> EnumerationValues => [
         System,
-        Light,
-        Dark
+        White,
+        Gray,
+        Black,
+
+        Red,
+        Orange,
+        Yellow,
+        Lime,
+        Green,
+        Teal,
+        Cyan,
+        Blue,
+        Purple,
+        Magenta
     ];
 
     public uint Value => value;
+
+    public bool IsAccentTheme()
+    {
+        return Value is
+            Gray or Red or Orange or Yellow or
+            Lime or Green or Teal or Cyan or
+            Blue or Purple or Magenta;
+    }
+
+    public Color? GetAccentColor()
+    {
+        return Value switch
+        {
+            Gray    => Color.FromArgb(255, 107, 114, 128),
+            Red     => Color.FromArgb(255, 239, 68,  68),
+            Orange  => Color.FromArgb(255, 249, 115, 22),
+            Yellow  => Color.FromArgb(255, 234, 179, 8),
+            Lime    => Color.FromArgb(255, 132, 204, 22),
+            Green   => Color.FromArgb(255, 34,  197, 94),
+            Teal    => Color.FromArgb(255, 20,  184, 166),
+            Cyan    => Color.FromArgb(255, 0,   199, 252),
+            Blue    => Color.FromArgb(255, 59,  130, 246),
+            Purple  => Color.FromArgb(255, 139, 92,  246),
+            Magenta => Color.FromArgb(255, 217, 70,  239),
+            _ => null
+        };
+    }
+
+    public Theme ResolveBaseTheme(Theme systemTheme)
+    {
+        if (Value is System)
+            return systemTheme;
+
+        return IsAccentTheme() ? White : Value;
+    }
 
     public string GetString()
     {
         return value switch
         {
-            System => nameof(System),
-            Light  => nameof(Light),
-            Dark   => nameof(Dark),
-            _      => ""
+            System  => nameof(System),
+            White   => nameof(White),
+            Gray    => nameof(Gray),
+            Black   => nameof(Black),
+
+            Red     => nameof(Red),
+            Orange  => nameof(Orange),
+            Yellow  => nameof(Yellow),
+            Lime    => nameof(Lime),
+            Green   => nameof(Green),
+            Teal    => nameof(Teal),
+            Cyan    => nameof(Cyan),
+            Blue    => nameof(Blue),
+            Purple  => nameof(Purple),
+            Magenta => nameof(Magenta),
+
+            _       => ""
         };
     }
 
@@ -48,10 +120,23 @@ internal readonly record struct Theme(uint value) : IClosedEnum<Theme>
     {
         Theme? nullableResult = value switch
         {
-            nameof(System) => System,
-            nameof(Light)  => Light,
-            nameof(Dark)   => Dark,
-            _              => null
+            nameof(System)  => System,
+            nameof(White)   => White,
+            nameof(Gray)    => Gray,
+            nameof(Black)   => Black,
+
+            nameof(Red)     => Red,
+            nameof(Orange)  => Orange,
+            nameof(Yellow)  => Yellow,
+            nameof(Lime)    => Lime,
+            nameof(Green)   => Green,
+            nameof(Teal)    => Teal,
+            nameof(Cyan)    => Cyan,
+            nameof(Blue)    => Blue,
+            nameof(Purple)  => Purple,
+            nameof(Magenta) => Magenta,
+
+            _               => null
         };
 
         result = nullableResult.GetValueOrDefault();

@@ -56,8 +56,7 @@ internal sealed class IconifyApp : ApplicationContext
             GetSpeed, SetSpeed,
             StartupAppManager.GetStartup, StartupAppManager.SetStartup,
             OpenRepository,
-            Application.Exit
-        );
+            Application.Exit);
 
         _animationTimer.Tick += AnimationTick;
         _animationTimer.Interval = _speed.GetDelay();
@@ -86,7 +85,7 @@ internal sealed class IconifyApp : ApplicationContext
         using var rKey = Registry.CurrentUser.OpenSubKey(AppStrings.RegistryNamePersonalization);
         object? value = rKey?.GetValue(AppStrings.RegistryKeyIsLightTheme);
 
-        return value is 0 ? Theme.Dark : Theme.Light;
+        return value is 0 ? Theme.White : Theme.Black;
     }
 
     private Runner GetRunner()

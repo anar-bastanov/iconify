@@ -33,7 +33,6 @@ internal sealed class ContextMenuRenderer : ToolStripProfessionalRenderer
             e.TextFont,
             textRectangle,
             item.ForeColor,
-            item.Flags()
-        );
+            item.Flags());
     }
 }

@@ -121,568 +121,568 @@
   <data name="AppIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\app_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_bird_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\bird\dark_bird_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_bird_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\white_bird_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_bird_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\bird\dark_bird_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_bird_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\white_bird_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_bird_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\bird\dark_bird_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_bird_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\white_bird_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_bird_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\bird\dark_bird_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_bird_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\white_bird_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_bird_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\bird\dark_bird_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_bird_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\white_bird_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_bird_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\bird\dark_bird_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_bird_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\white_bird_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cat_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cat\dark_cat_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cat_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cat\white_cat_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cat_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cat\dark_cat_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cat_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cat\white_cat_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cat_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cat\dark_cat_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cat_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cat\white_cat_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cat_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cat\dark_cat_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cat_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cat\white_cat_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cat_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cat\dark_cat_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cat_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cat\white_cat_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_8.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_8.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_9.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_9.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_10.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_10.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_cloud_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\dark_cloud_11.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_cloud_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\white_cloud_11.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_26" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_27" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_eye_34" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\dark_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_eye_34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\white_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_flame_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\dark_flame_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_flame_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\white_flame_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_flame_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\dark_flame_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_flame_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\white_flame_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_flame_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\dark_flame_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_flame_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\white_flame_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_flame_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\dark_flame_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_flame_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\white_flame_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_flame_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\dark_flame_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_flame_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\white_flame_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_flame_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\dark_flame_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_flame_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\white_flame_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_flame_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\dark_flame_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_flame_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\white_flame_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_flame_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\dark_flame_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_flame_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\white_flame_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_flame_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\dark_flame_8.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_flame_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\white_flame_8.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_flame_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\dark_flame_9.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_flame_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\white_flame_9.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_flame_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\dark_flame_10.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_flame_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\white_flame_10.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_flame_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\dark_flame_11.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_flame_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\white_flame_11.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_flame_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\dark_flame_12.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_flame_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\white_flame_12.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_flame_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\dark_flame_13.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_flame_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\white_flame_13.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_flame_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\dark_flame_14.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_flame_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\white_flame_14.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_flame_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\dark_flame_15.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_flame_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\white_flame_15.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_yinyang_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\yinyang\dark_yinyang_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_yinyang_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\white_yinyang_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_yinyang_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\yinyang\dark_yinyang_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_yinyang_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\white_yinyang_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_yinyang_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\yinyang\dark_yinyang_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_yinyang_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\white_yinyang_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_yinyang_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\yinyang\dark_yinyang_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_yinyang_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\white_yinyang_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_yinyang_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\yinyang\dark_yinyang_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_yinyang_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\white_yinyang_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_yinyang_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\yinyang\dark_yinyang_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_yinyang_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\white_yinyang_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_yinyang_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\yinyang\dark_yinyang_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_yinyang_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\white_yinyang_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_yinyang_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\yinyang\dark_yinyang_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_yinyang_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\white_yinyang_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_bird_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\bird\light_bird_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_bird_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\black_bird_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_bird_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\bird\light_bird_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_bird_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\black_bird_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_bird_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\bird\light_bird_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_bird_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\black_bird_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_bird_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\bird\light_bird_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_bird_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\black_bird_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_bird_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\bird\light_bird_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_bird_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\black_bird_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_bird_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\bird\light_bird_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_bird_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\bird\black_bird_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cat_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cat\light_cat_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cat_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cat\black_cat_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cat_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cat\light_cat_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cat_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cat\black_cat_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cat_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cat\light_cat_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cat_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cat\black_cat_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cat_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cat\light_cat_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cat_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cat\black_cat_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cat_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cat\light_cat_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cat_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cat\black_cat_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_8.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_8.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_9.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_9.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_10.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_10.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_cloud_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\cloud\light_cloud_11.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_cloud_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\cloud\black_cloud_11.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_26" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_27" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_eye_34" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\eye\light_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_eye_34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\eye\black_eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_flame_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\light_flame_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_flame_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\black_flame_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_flame_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\light_flame_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_flame_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\black_flame_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_flame_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\light_flame_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_flame_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\black_flame_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_flame_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\light_flame_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_flame_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\black_flame_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_flame_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\light_flame_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_flame_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\black_flame_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_flame_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\light_flame_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_flame_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\black_flame_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_flame_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\light_flame_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_flame_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\black_flame_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_flame_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\light_flame_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_flame_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\black_flame_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_flame_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\light_flame_8.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_flame_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\black_flame_8.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_flame_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\light_flame_9.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_flame_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\black_flame_9.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_flame_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\light_flame_10.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_flame_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\black_flame_10.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_flame_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\light_flame_11.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_flame_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\black_flame_11.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_flame_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\light_flame_12.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_flame_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\black_flame_12.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_flame_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\light_flame_13.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_flame_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\black_flame_13.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_flame_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\light_flame_14.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_flame_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\black_flame_14.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_flame_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\flame\light_flame_15.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_flame_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\flame\black_flame_15.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_yinyang_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\yinyang\light_yinyang_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_yinyang_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\black_yinyang_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_yinyang_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\yinyang\light_yinyang_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_yinyang_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\black_yinyang_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_yinyang_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\yinyang\light_yinyang_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_yinyang_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\black_yinyang_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_yinyang_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\yinyang\light_yinyang_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_yinyang_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\black_yinyang_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_yinyang_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\yinyang\light_yinyang_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_yinyang_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\black_yinyang_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_yinyang_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\yinyang\light_yinyang_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_yinyang_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\black_yinyang_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_yinyang_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\yinyang\light_yinyang_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_yinyang_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\black_yinyang_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light_yinyang_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\runners\yinyang\light_yinyang_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_yinyang_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\runners\yinyang\black_yinyang_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
