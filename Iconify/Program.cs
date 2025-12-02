@@ -1,5 +1,4 @@
 ﻿// Copyright 2025 Anar Bastanov
-// Copyright 2020 Takuto Nakamura
 //
 //    Licensed under the Apache License, Version 2.0 (the "License");
 //    you may not use this file except in compliance with the License.
@@ -20,21 +19,46 @@ internal static class Program
     [STAThread]
     private static void Main()
     {
-        // Terminate Iconify if there is any existing instance.
-        using var processMutex = new Mutex(true, "_ICONIFY_MUTEX", out bool result);
-
-        if (!result)
-            return;
+        bool ownsMutex = false;
+        Mutex? instanceMutex = null;
 
         try
         {
+            instanceMutex = new Mutex(initiallyOwned: false, AppStrings.GlobalMutexName);
+
+            try
+            {
+                ownsMutex = instanceMutex.WaitOne(TimeSpan.Zero, exitContext: false);
+            }
+            catch (AbandonedMutexException)
+            {
+                ownsMutex = true;
+            }
+
+            if (!ownsMutex)
+                return;
+
             ApplicationConfiguration.Initialize();
             Application.SetColorMode(SystemColorMode.System);
             Application.Run(new IconifyApp());
         }
         finally
         {
-            processMutex.ReleaseMutex();
+            if (instanceMutex is not null)
+            {
+                if (ownsMutex)
+                {
+                    try
+                    {
+                        instanceMutex.ReleaseMutex();
+                    }
+                    catch (ApplicationException)
+                    {
+                    }
+                }
+
+                instanceMutex.Dispose();
+            }
         }
     }
 }

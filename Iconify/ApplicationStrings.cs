@@ -18,6 +18,12 @@ namespace Iconify;
 
 public static class ApplicationStrings
 {
+    public static readonly string ApplicationName = Application.ProductName!;
+
+    public const string ApplicationGuid = "414E4152-8DF7-4EC1-9432-7E5EF7CB03C4";
+
+    public static readonly string GlobalMutexName = @$"Global\{ApplicationName}_{ApplicationGuid}";
+
     public const string RepositoryLink = "https://github.com/anar-bastanov/iconify";
 
     public const string RegistryNamePersonalization = @"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize";
@@ -25,6 +31,4 @@ public static class ApplicationStrings
     public const string RegistryNameStartupApps = @"Software\Microsoft\Windows\CurrentVersion\Run";
 
     public const string RegistryKeyIsLightTheme = "SystemUsesLightTheme";
-
-    public static readonly string ApplicationName = Application.ProductName!;
 }
