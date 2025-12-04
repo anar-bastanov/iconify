@@ -76,12 +76,7 @@ internal readonly record struct Theme(uint value) : IClosedEnum<Theme>
 
     public Theme ResolveBaseTheme(Theme systemTheme)
     {
-        return Value switch
-        {
-            System => System,
-            Black  => Black,
-            _      => White
-        };
+        return Value is Black ? Black : White;
     }
 
     public string GetString()
