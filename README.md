@@ -14,6 +14,11 @@ Forked and stripped down from [RunCat 365](https://github.com/Kyome22/RunCat365)
 
 ![Preview](/res/iconify-thumbnail-480p.png)
 
+## Requirements
+
+- Windows 10 version 19041 (20H1) or later, or Windows 11
+- 64-bit (x64) operating system
+
 ## Installation
 
 Download and extract one of the archives below, then run `Iconify.exe`:
@@ -21,7 +26,7 @@ Download and extract one of the archives below, then run `Iconify.exe`:
 | [Portable build](https://github.com/anar-bastanov/iconify/releases/latest/download/Iconify-portable-win-x64.zip) | [Framework-dependent build](https://github.com/anar-bastanov/iconify/releases/latest/download/Iconify-runtime-win-x64.zip) |
 |:-|:-|
 | Bigger download | Smaller download |
-| No .NET runtime required | Requires [.NET 9 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/9.0) |
+| No .NET runtime required | Requires [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0) |
 | Executable can be moved anywhere | Executable must stay with other files |
 
 > [!TIP]
@@ -32,15 +37,10 @@ Download and extract one of the archives below, then run `Iconify.exe`:
 > ```sh
 > dotnet --list-runtimes
 > ```
-> Look for `Microsoft.WindowsDesktop.App 9.x`.
+> Look for `Microsoft.WindowsDesktop.App 10.x`.
 
 > [!TIP]
 > For a cleaner setup, put the extracted folder in `%ProgramFiles%` (system-wide, admin required)  or `%LOCALAPPDATA%` (per-user).
-
-## Requirements
-
-- Windows 10 version 19041 (20H1) or later, or Windows 11
-- 64-bit (x64) operating system
 
 ## License
 
