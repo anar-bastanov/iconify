@@ -151,8 +151,8 @@ internal sealed partial class ContextMenuManager : IDisposable
     {
         var rm = Resources.ResourceManager;
 
-        Theme baseTheme = theme.ResolveBaseTheme(systemTheme);
-        Color? accentColor = theme.IsAccentTheme() ? theme.GetAccentColor() : null;
+        var baseTheme = theme.ResolveBaseTheme(systemTheme);
+        Color? accentColor = theme.GetAccentColor();
 
         string prefix = baseTheme.GetString();
         string runnerName = runner.GetString();
@@ -225,17 +225,18 @@ internal sealed partial class ContextMenuManager : IDisposable
     {
         lock (_iconLock)
         {
+            if (_notifyIcon is not null)
+            {
+                _notifyIcon.Visible = false;
+                _notifyIcon.Icon = null;
+                _notifyIcon.ContextMenuStrip?.Dispose();
+                _notifyIcon.Dispose();
+            }
+
             foreach (var icon in _icons)
                 icon.Dispose();
 
             _icons.Clear();
-        }
-
-        if (_notifyIcon is not null)
-        {
-            _notifyIcon.Visible = false;
-            _notifyIcon.ContextMenuStrip?.Dispose();
-            _notifyIcon.Dispose();
         }
 
         GC.SuppressFinalize(this);

@@ -55,14 +55,6 @@ internal readonly record struct Theme(uint value) : IClosedEnum<Theme>
 
     public uint Value => value;
 
-    public bool IsAccentTheme()
-    {
-        return Value is
-            Gray or Red or Orange or Yellow or
-            Lime or Green or Teal or Cyan or
-            Blue or Purple or Pink;
-    }
-
     public Color? GetAccentColor()
     {
         return Value switch
@@ -84,10 +76,12 @@ internal readonly record struct Theme(uint value) : IClosedEnum<Theme>
 
     public Theme ResolveBaseTheme(Theme systemTheme)
     {
-        if (Value is System)
-            return systemTheme;
-
-        return IsAccentTheme() ? White : Value;
+        return Value switch
+        {
+            System => System,
+            Black  => Black,
+            _      => White
+        };
     }
 
     public string GetString()

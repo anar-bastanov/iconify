@@ -23,6 +23,8 @@ namespace Iconify;
 
 internal sealed class IconifyApp : ApplicationContext
 {
+    private readonly SynchronizationContext _uiContext;
+
     private readonly ContextMenuManager _contextMenuManager;
 
     private Runner _runner;
@@ -35,8 +37,12 @@ internal sealed class IconifyApp : ApplicationContext
 
     private bool _isDisposed = false;
 
+    private bool _isRestartRequested = false;
+
     public IconifyApp()
     {
+        _uiContext = SynchronizationContext.Current ?? new WindowsFormsSynchronizationContext();
+
         UserSettings.Default.Reload();
 
         bool isFirstLaunch = UserSettings.Default.IsFirstLaunch;
@@ -71,13 +77,31 @@ internal sealed class IconifyApp : ApplicationContext
         }
     }
 
-    private void UserPreferenceChanged(object sender, UserPreferenceChangedEventArgs e)
+    private void UserPreferenceChanged(object? sender, UserPreferenceChangedEventArgs e)
     {
-        if (e.Category is not UserPreferenceCategory.General)
-            return; 
+        if (e.Category is not (UserPreferenceCategory.General or UserPreferenceCategory.Color or
+                               UserPreferenceCategory.VisualStyle or UserPreferenceCategory.Window))
+            return;
 
-        var systemTheme = GetSystemTheme();
-        _contextMenuManager.SetIcons(systemTheme, _theme, _runner);
+        if (Interlocked.Exchange(ref _isRestartRequested, true))
+            return;
+
+        SystemEvents.UserPreferenceChanged -= UserPreferenceChanged;
+
+        _uiContext.Post(_ =>
+        {
+            if (_theme.Value is Theme.System or Theme.White or Theme.Gray or Theme.Black)
+                SetTheme(Theme.System);
+
+            _animationTimer.Stop();
+            _animationTimer.Tick -= AnimationTick;
+
+            _contextMenuManager.Dispose();
+
+            Application.Restart();
+            Application.ExitThread();
+
+        }, null);
     }
 
     private static Theme GetSystemTheme()
