@@ -60,6 +60,7 @@ internal readonly record struct Theme(uint value) : IClosedEnum<Theme>
         return Value switch
         {
             Gray   => Color.FromArgb(255, 148, 163, 184),
+            Black  => Color.FromArgb(255,   0,   0,   0),
             Red    => Color.FromArgb(255, 248,  68,  68),
             Orange => Color.FromArgb(255, 252, 129,  47),
             Yellow => Color.FromArgb(255, 250, 204,  21),
@@ -72,11 +73,6 @@ internal readonly record struct Theme(uint value) : IClosedEnum<Theme>
             Pink   => Color.FromArgb(255, 236,  72, 153),
             _      => null
         };
-    }
-
-    public Theme ResolveBaseTheme(Theme systemTheme)
-    {
-        return Value is Black ? Black : White;
     }
 
     public string GetString()

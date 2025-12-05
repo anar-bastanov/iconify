@@ -141,27 +141,32 @@ internal sealed partial class ContextMenuManager : IDisposable
 
     private static Bitmap? GetRunnerThumbnailBitmap(Theme systemTheme, Runner runner)
     {
-        string iconName = $"{systemTheme.GetString()}_{runner.GetString()}_0".ToLower();
-        var icon = Resources.ResourceManager.GetObject(iconName) as Icon;
+        string iconName = $"{runner.GetString()}_0".ToLower();
+        var accentColor = systemTheme.GetAccentColor();
 
-        return icon?.ToBitmap();
+        if (Resources.ResourceManager.GetObject(iconName) is not Icon icon)
+            return null;
+
+        if (accentColor is null)
+            return icon.ToBitmap();
+
+        using var tintedIcon = IconColorizer.CreateTintedIcon(icon, accentColor.Value);
+        return tintedIcon.ToBitmap();
     }
 
     public void SetIcons(Theme systemTheme, Theme theme, Runner runner)
     {
         var rm = Resources.ResourceManager;
 
-        var baseTheme = theme.ResolveBaseTheme(systemTheme);
+        theme = theme == Theme.System ? systemTheme : theme;
         Color? accentColor = theme.GetAccentColor();
-
-        string prefix = baseTheme.GetString();
         string runnerName = runner.GetString();
         int capacity = runner.GetFrameNumber();
         var list = new List<Icon>(capacity);
 
         for (int i = 0; i < capacity; ++i)
         {
-            string iconName = $"{prefix}_{runnerName}_{i}".ToLower();
+            string iconName = $"{runnerName}_{i}".ToLower();
 
             if (rm.GetObject(iconName) is Icon baseIcon)
             {

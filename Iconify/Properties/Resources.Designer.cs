@@ -19,7 +19,7 @@ namespace Iconify.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -73,9 +73,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_bird_0 {
+        internal static System.Drawing.Icon bird_0 {
             get {
-                object obj = ResourceManager.GetObject("dark_bird_0", resourceCulture);
+                object obj = ResourceManager.GetObject("bird_0", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_bird_1 {
+        internal static System.Drawing.Icon bird_1 {
             get {
-                object obj = ResourceManager.GetObject("dark_bird_1", resourceCulture);
+                object obj = ResourceManager.GetObject("bird_1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_bird_2 {
+        internal static System.Drawing.Icon bird_2 {
             get {
-                object obj = ResourceManager.GetObject("dark_bird_2", resourceCulture);
+                object obj = ResourceManager.GetObject("bird_2", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_bird_3 {
+        internal static System.Drawing.Icon bird_3 {
             get {
-                object obj = ResourceManager.GetObject("dark_bird_3", resourceCulture);
+                object obj = ResourceManager.GetObject("bird_3", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_bird_4 {
+        internal static System.Drawing.Icon bird_4 {
             get {
-                object obj = ResourceManager.GetObject("dark_bird_4", resourceCulture);
+                object obj = ResourceManager.GetObject("bird_4", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_bird_5 {
+        internal static System.Drawing.Icon bird_5 {
             get {
-                object obj = ResourceManager.GetObject("dark_bird_5", resourceCulture);
+                object obj = ResourceManager.GetObject("bird_5", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cat_0 {
+        internal static System.Drawing.Icon cat_0 {
             get {
-                object obj = ResourceManager.GetObject("dark_cat_0", resourceCulture);
+                object obj = ResourceManager.GetObject("cat_0", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cat_1 {
+        internal static System.Drawing.Icon cat_1 {
             get {
-                object obj = ResourceManager.GetObject("dark_cat_1", resourceCulture);
+                object obj = ResourceManager.GetObject("cat_1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cat_2 {
+        internal static System.Drawing.Icon cat_2 {
             get {
-                object obj = ResourceManager.GetObject("dark_cat_2", resourceCulture);
+                object obj = ResourceManager.GetObject("cat_2", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -163,9 +163,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cat_3 {
+        internal static System.Drawing.Icon cat_3 {
             get {
-                object obj = ResourceManager.GetObject("dark_cat_3", resourceCulture);
+                object obj = ResourceManager.GetObject("cat_3", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -173,9 +173,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cat_4 {
+        internal static System.Drawing.Icon cat_4 {
             get {
-                object obj = ResourceManager.GetObject("dark_cat_4", resourceCulture);
+                object obj = ResourceManager.GetObject("cat_4", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -183,9 +183,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_0 {
+        internal static System.Drawing.Icon cloud_0 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_0", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_0", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -193,9 +193,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_1 {
+        internal static System.Drawing.Icon cloud_1 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_1", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -203,9 +203,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_10 {
+        internal static System.Drawing.Icon cloud_10 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_10", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_10", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -213,9 +213,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_11 {
+        internal static System.Drawing.Icon cloud_11 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_11", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_11", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -223,9 +223,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_12 {
+        internal static System.Drawing.Icon cloud_12 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_12", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_12", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -233,9 +233,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_13 {
+        internal static System.Drawing.Icon cloud_13 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_13", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_13", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -243,9 +243,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_14 {
+        internal static System.Drawing.Icon cloud_14 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_14", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_14", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -253,9 +253,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_15 {
+        internal static System.Drawing.Icon cloud_15 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_15", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_15", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -263,9 +263,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_16 {
+        internal static System.Drawing.Icon cloud_16 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_16", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_16", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -273,9 +273,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_17 {
+        internal static System.Drawing.Icon cloud_17 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_17", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_17", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -283,9 +283,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_18 {
+        internal static System.Drawing.Icon cloud_18 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_18", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_18", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -293,9 +293,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_19 {
+        internal static System.Drawing.Icon cloud_19 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_19", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_19", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -303,9 +303,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_2 {
+        internal static System.Drawing.Icon cloud_2 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_2", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_2", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -313,9 +313,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_20 {
+        internal static System.Drawing.Icon cloud_20 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_20", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_20", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -323,9 +323,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_21 {
+        internal static System.Drawing.Icon cloud_21 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_21", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_21", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -333,9 +333,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_22 {
+        internal static System.Drawing.Icon cloud_22 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_22", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_22", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -343,9 +343,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_23 {
+        internal static System.Drawing.Icon cloud_23 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_23", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_23", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -353,9 +353,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_3 {
+        internal static System.Drawing.Icon cloud_3 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_3", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_3", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -363,9 +363,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_4 {
+        internal static System.Drawing.Icon cloud_4 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_4", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_4", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -373,9 +373,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_5 {
+        internal static System.Drawing.Icon cloud_5 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_5", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_5", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -383,9 +383,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_6 {
+        internal static System.Drawing.Icon cloud_6 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_6", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_6", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -393,9 +393,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_7 {
+        internal static System.Drawing.Icon cloud_7 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_7", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_7", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -403,9 +403,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_8 {
+        internal static System.Drawing.Icon cloud_8 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_8", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_8", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -413,9 +413,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_cloud_9 {
+        internal static System.Drawing.Icon cloud_9 {
             get {
-                object obj = ResourceManager.GetObject("dark_cloud_9", resourceCulture);
+                object obj = ResourceManager.GetObject("cloud_9", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -423,9 +423,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_0 {
+        internal static System.Drawing.Icon eye_0 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_0", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_0", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -433,9 +433,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_1 {
+        internal static System.Drawing.Icon eye_1 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_1", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -443,9 +443,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_10 {
+        internal static System.Drawing.Icon eye_10 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_10", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_10", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -453,9 +453,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_11 {
+        internal static System.Drawing.Icon eye_11 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_11", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_11", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -463,9 +463,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_12 {
+        internal static System.Drawing.Icon eye_12 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_12", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_12", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -473,9 +473,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_13 {
+        internal static System.Drawing.Icon eye_13 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_13", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_13", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -483,9 +483,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_14 {
+        internal static System.Drawing.Icon eye_14 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_14", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_14", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -493,9 +493,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_15 {
+        internal static System.Drawing.Icon eye_15 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_15", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_15", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -503,9 +503,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_16 {
+        internal static System.Drawing.Icon eye_16 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_16", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_16", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -513,9 +513,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_17 {
+        internal static System.Drawing.Icon eye_17 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_17", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_17", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -523,9 +523,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_18 {
+        internal static System.Drawing.Icon eye_18 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_18", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_18", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -533,9 +533,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_19 {
+        internal static System.Drawing.Icon eye_19 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_19", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_19", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -543,9 +543,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_2 {
+        internal static System.Drawing.Icon eye_2 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_2", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_2", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -553,9 +553,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_20 {
+        internal static System.Drawing.Icon eye_20 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_20", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_20", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -563,9 +563,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_21 {
+        internal static System.Drawing.Icon eye_21 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_21", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_21", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -573,9 +573,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_22 {
+        internal static System.Drawing.Icon eye_22 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_22", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_22", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -583,9 +583,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_23 {
+        internal static System.Drawing.Icon eye_23 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_23", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_23", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -593,9 +593,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_24 {
+        internal static System.Drawing.Icon eye_24 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_24", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_24", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -603,9 +603,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_25 {
+        internal static System.Drawing.Icon eye_25 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_25", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_25", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -613,9 +613,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_26 {
+        internal static System.Drawing.Icon eye_26 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_26", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_26", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -623,9 +623,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_27 {
+        internal static System.Drawing.Icon eye_27 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_27", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_27", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -633,9 +633,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_28 {
+        internal static System.Drawing.Icon eye_28 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_28", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_28", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -643,9 +643,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_29 {
+        internal static System.Drawing.Icon eye_29 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_29", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_29", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -653,9 +653,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_3 {
+        internal static System.Drawing.Icon eye_3 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_3", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_3", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -663,9 +663,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_30 {
+        internal static System.Drawing.Icon eye_30 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_30", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_30", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -673,9 +673,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_31 {
+        internal static System.Drawing.Icon eye_31 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_31", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_31", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -683,9 +683,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_32 {
+        internal static System.Drawing.Icon eye_32 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_32", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_32", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -693,9 +693,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_33 {
+        internal static System.Drawing.Icon eye_33 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_33", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_33", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -703,9 +703,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_34 {
+        internal static System.Drawing.Icon eye_34 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_34", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_34", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -713,9 +713,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_4 {
+        internal static System.Drawing.Icon eye_4 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_4", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_4", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -723,9 +723,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_5 {
+        internal static System.Drawing.Icon eye_5 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_5", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_5", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -733,9 +733,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_6 {
+        internal static System.Drawing.Icon eye_6 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_6", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_6", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -743,9 +743,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_7 {
+        internal static System.Drawing.Icon eye_7 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_7", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_7", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -753,9 +753,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_8 {
+        internal static System.Drawing.Icon eye_8 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_8", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_8", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -763,9 +763,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_eye_9 {
+        internal static System.Drawing.Icon eye_9 {
             get {
-                object obj = ResourceManager.GetObject("dark_eye_9", resourceCulture);
+                object obj = ResourceManager.GetObject("eye_9", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -773,9 +773,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_flame_0 {
+        internal static System.Drawing.Icon flame_0 {
             get {
-                object obj = ResourceManager.GetObject("dark_flame_0", resourceCulture);
+                object obj = ResourceManager.GetObject("flame_0", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -783,9 +783,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_flame_1 {
+        internal static System.Drawing.Icon flame_1 {
             get {
-                object obj = ResourceManager.GetObject("dark_flame_1", resourceCulture);
+                object obj = ResourceManager.GetObject("flame_1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -793,9 +793,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_flame_10 {
+        internal static System.Drawing.Icon flame_10 {
             get {
-                object obj = ResourceManager.GetObject("dark_flame_10", resourceCulture);
+                object obj = ResourceManager.GetObject("flame_10", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -803,9 +803,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_flame_11 {
+        internal static System.Drawing.Icon flame_11 {
             get {
-                object obj = ResourceManager.GetObject("dark_flame_11", resourceCulture);
+                object obj = ResourceManager.GetObject("flame_11", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -813,9 +813,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_flame_12 {
+        internal static System.Drawing.Icon flame_12 {
             get {
-                object obj = ResourceManager.GetObject("dark_flame_12", resourceCulture);
+                object obj = ResourceManager.GetObject("flame_12", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -823,9 +823,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_flame_13 {
+        internal static System.Drawing.Icon flame_13 {
             get {
-                object obj = ResourceManager.GetObject("dark_flame_13", resourceCulture);
+                object obj = ResourceManager.GetObject("flame_13", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -833,9 +833,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_flame_14 {
+        internal static System.Drawing.Icon flame_14 {
             get {
-                object obj = ResourceManager.GetObject("dark_flame_14", resourceCulture);
+                object obj = ResourceManager.GetObject("flame_14", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -843,9 +843,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_flame_15 {
+        internal static System.Drawing.Icon flame_15 {
             get {
-                object obj = ResourceManager.GetObject("dark_flame_15", resourceCulture);
+                object obj = ResourceManager.GetObject("flame_15", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -853,9 +853,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_flame_2 {
+        internal static System.Drawing.Icon flame_2 {
             get {
-                object obj = ResourceManager.GetObject("dark_flame_2", resourceCulture);
+                object obj = ResourceManager.GetObject("flame_2", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -863,9 +863,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_flame_3 {
+        internal static System.Drawing.Icon flame_3 {
             get {
-                object obj = ResourceManager.GetObject("dark_flame_3", resourceCulture);
+                object obj = ResourceManager.GetObject("flame_3", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -873,9 +873,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_flame_4 {
+        internal static System.Drawing.Icon flame_4 {
             get {
-                object obj = ResourceManager.GetObject("dark_flame_4", resourceCulture);
+                object obj = ResourceManager.GetObject("flame_4", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -883,9 +883,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_flame_5 {
+        internal static System.Drawing.Icon flame_5 {
             get {
-                object obj = ResourceManager.GetObject("dark_flame_5", resourceCulture);
+                object obj = ResourceManager.GetObject("flame_5", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -893,9 +893,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_flame_6 {
+        internal static System.Drawing.Icon flame_6 {
             get {
-                object obj = ResourceManager.GetObject("dark_flame_6", resourceCulture);
+                object obj = ResourceManager.GetObject("flame_6", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -903,9 +903,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_flame_7 {
+        internal static System.Drawing.Icon flame_7 {
             get {
-                object obj = ResourceManager.GetObject("dark_flame_7", resourceCulture);
+                object obj = ResourceManager.GetObject("flame_7", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -913,9 +913,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_flame_8 {
+        internal static System.Drawing.Icon flame_8 {
             get {
-                object obj = ResourceManager.GetObject("dark_flame_8", resourceCulture);
+                object obj = ResourceManager.GetObject("flame_8", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -923,9 +923,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_flame_9 {
+        internal static System.Drawing.Icon flame_9 {
             get {
-                object obj = ResourceManager.GetObject("dark_flame_9", resourceCulture);
+                object obj = ResourceManager.GetObject("flame_9", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -933,9 +933,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_yinyang_0 {
+        internal static System.Drawing.Icon yinyang_0 {
             get {
-                object obj = ResourceManager.GetObject("dark_yinyang_0", resourceCulture);
+                object obj = ResourceManager.GetObject("yinyang_0", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -943,9 +943,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_yinyang_1 {
+        internal static System.Drawing.Icon yinyang_1 {
             get {
-                object obj = ResourceManager.GetObject("dark_yinyang_1", resourceCulture);
+                object obj = ResourceManager.GetObject("yinyang_1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -953,9 +953,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_yinyang_2 {
+        internal static System.Drawing.Icon yinyang_2 {
             get {
-                object obj = ResourceManager.GetObject("dark_yinyang_2", resourceCulture);
+                object obj = ResourceManager.GetObject("yinyang_2", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -963,9 +963,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_yinyang_3 {
+        internal static System.Drawing.Icon yinyang_3 {
             get {
-                object obj = ResourceManager.GetObject("dark_yinyang_3", resourceCulture);
+                object obj = ResourceManager.GetObject("yinyang_3", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -973,9 +973,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_yinyang_4 {
+        internal static System.Drawing.Icon yinyang_4 {
             get {
-                object obj = ResourceManager.GetObject("dark_yinyang_4", resourceCulture);
+                object obj = ResourceManager.GetObject("yinyang_4", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -983,9 +983,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_yinyang_5 {
+        internal static System.Drawing.Icon yinyang_5 {
             get {
-                object obj = ResourceManager.GetObject("dark_yinyang_5", resourceCulture);
+                object obj = ResourceManager.GetObject("yinyang_5", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -993,9 +993,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_yinyang_6 {
+        internal static System.Drawing.Icon yinyang_6 {
             get {
-                object obj = ResourceManager.GetObject("dark_yinyang_6", resourceCulture);
+                object obj = ResourceManager.GetObject("yinyang_6", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -1003,949 +1003,9 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dark_yinyang_7 {
+        internal static System.Drawing.Icon yinyang_7 {
             get {
-                object obj = ResourceManager.GetObject("dark_yinyang_7", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_bird_0 {
-            get {
-                object obj = ResourceManager.GetObject("light_bird_0", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_bird_1 {
-            get {
-                object obj = ResourceManager.GetObject("light_bird_1", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_bird_2 {
-            get {
-                object obj = ResourceManager.GetObject("light_bird_2", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_bird_3 {
-            get {
-                object obj = ResourceManager.GetObject("light_bird_3", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_bird_4 {
-            get {
-                object obj = ResourceManager.GetObject("light_bird_4", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_bird_5 {
-            get {
-                object obj = ResourceManager.GetObject("light_bird_5", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cat_0 {
-            get {
-                object obj = ResourceManager.GetObject("light_cat_0", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cat_1 {
-            get {
-                object obj = ResourceManager.GetObject("light_cat_1", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cat_2 {
-            get {
-                object obj = ResourceManager.GetObject("light_cat_2", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cat_3 {
-            get {
-                object obj = ResourceManager.GetObject("light_cat_3", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cat_4 {
-            get {
-                object obj = ResourceManager.GetObject("light_cat_4", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_0 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_0", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_1 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_1", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_10 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_10", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_11 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_11", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_12 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_12", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_13 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_13", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_14 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_14", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_15 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_15", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_16 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_16", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_17 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_17", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_18 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_18", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_19 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_19", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_2 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_2", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_20 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_20", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_21 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_21", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_22 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_22", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_23 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_23", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_3 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_3", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_4 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_4", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_5 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_5", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_6 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_6", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_7 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_7", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_8 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_8", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_cloud_9 {
-            get {
-                object obj = ResourceManager.GetObject("light_cloud_9", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_0 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_0", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_1 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_1", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_10 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_10", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_11 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_11", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_12 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_12", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_13 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_13", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_14 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_14", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_15 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_15", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_16 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_16", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_17 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_17", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_18 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_18", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_19 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_19", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_2 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_2", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_20 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_20", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_21 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_21", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_22 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_22", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_23 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_23", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_24 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_24", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_25 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_25", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_26 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_26", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_27 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_27", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_28 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_28", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_29 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_29", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_3 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_3", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_30 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_30", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_31 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_31", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_32 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_32", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_33 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_33", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_34 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_34", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_4 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_4", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_5 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_5", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_6 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_6", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_7 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_7", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_8 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_8", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_eye_9 {
-            get {
-                object obj = ResourceManager.GetObject("light_eye_9", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_flame_0 {
-            get {
-                object obj = ResourceManager.GetObject("light_flame_0", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_flame_1 {
-            get {
-                object obj = ResourceManager.GetObject("light_flame_1", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_flame_10 {
-            get {
-                object obj = ResourceManager.GetObject("light_flame_10", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_flame_11 {
-            get {
-                object obj = ResourceManager.GetObject("light_flame_11", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_flame_12 {
-            get {
-                object obj = ResourceManager.GetObject("light_flame_12", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_flame_13 {
-            get {
-                object obj = ResourceManager.GetObject("light_flame_13", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_flame_14 {
-            get {
-                object obj = ResourceManager.GetObject("light_flame_14", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_flame_15 {
-            get {
-                object obj = ResourceManager.GetObject("light_flame_15", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_flame_2 {
-            get {
-                object obj = ResourceManager.GetObject("light_flame_2", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_flame_3 {
-            get {
-                object obj = ResourceManager.GetObject("light_flame_3", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_flame_4 {
-            get {
-                object obj = ResourceManager.GetObject("light_flame_4", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_flame_5 {
-            get {
-                object obj = ResourceManager.GetObject("light_flame_5", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_flame_6 {
-            get {
-                object obj = ResourceManager.GetObject("light_flame_6", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_flame_7 {
-            get {
-                object obj = ResourceManager.GetObject("light_flame_7", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_flame_8 {
-            get {
-                object obj = ResourceManager.GetObject("light_flame_8", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_flame_9 {
-            get {
-                object obj = ResourceManager.GetObject("light_flame_9", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_yinyang_0 {
-            get {
-                object obj = ResourceManager.GetObject("light_yinyang_0", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_yinyang_1 {
-            get {
-                object obj = ResourceManager.GetObject("light_yinyang_1", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_yinyang_2 {
-            get {
-                object obj = ResourceManager.GetObject("light_yinyang_2", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_yinyang_3 {
-            get {
-                object obj = ResourceManager.GetObject("light_yinyang_3", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_yinyang_4 {
-            get {
-                object obj = ResourceManager.GetObject("light_yinyang_4", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_yinyang_5 {
-            get {
-                object obj = ResourceManager.GetObject("light_yinyang_5", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_yinyang_6 {
-            get {
-                object obj = ResourceManager.GetObject("light_yinyang_6", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon light_yinyang_7 {
-            get {
-                object obj = ResourceManager.GetObject("light_yinyang_7", resourceCulture);
+                object obj = ResourceManager.GetObject("yinyang_7", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
