@@ -226,6 +226,9 @@
   <data name="cloud_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\runners\cloud\cloud_11.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="color_preview_frame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\color_preview_frame.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="eye_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\runners\eye\eye_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

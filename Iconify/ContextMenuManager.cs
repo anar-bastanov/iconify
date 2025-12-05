@@ -87,7 +87,7 @@ internal sealed partial class ContextMenuManager : IDisposable
                 SetIcons(getSystemTheme(), getTheme(), getRunner());
             },
             getTheme(),
-            _ => null);
+            t => GetThemeThumbnailBitmap(getSystemTheme(), t));
 
         speedMenu.SetupSubMenusFromEnum(
             (parent, sender) =>
@@ -141,8 +141,24 @@ internal sealed partial class ContextMenuManager : IDisposable
 
     private static Bitmap? GetRunnerThumbnailBitmap(Theme systemTheme, Runner runner)
     {
-        string iconName = $"{runner.GetString()}_0".ToLower();
         var accentColor = systemTheme.GetAccentColor();
+        string iconName = $"{runner.GetString()}_0".ToLower();
+
+        if (Resources.ResourceManager.GetObject(iconName) is not Icon icon)
+            return null;
+
+        if (accentColor is null)
+            return icon.ToBitmap();
+
+        using var tintedIcon = IconColorizer.CreateTintedIcon(icon, accentColor.Value);
+        return tintedIcon.ToBitmap();
+    }
+
+    private static Bitmap? GetThemeThumbnailBitmap(Theme systemTheme, Theme theme)
+    {
+        theme = theme == Theme.System ? systemTheme : theme;
+        var accentColor = theme.GetAccentColor();
+        const string iconName = "color_preview_frame";
 
         if (Resources.ResourceManager.GetObject(iconName) is not Icon icon)
             return null;

@@ -423,6 +423,16 @@ namespace Iconify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
+        internal static System.Drawing.Icon color_preview_frame {
+            get {
+                object obj = ResourceManager.GetObject("color_preview_frame", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
         internal static System.Drawing.Icon eye_0 {
             get {
                 object obj = ResourceManager.GetObject("eye_0", resourceCulture);
