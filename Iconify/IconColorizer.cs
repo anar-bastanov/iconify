@@ -21,14 +21,14 @@ internal static partial class IconColorizer
 {
     [LibraryImport("user32.dll")]
     [return: MarshalAs(UnmanagedType.Bool)]
-    public static partial bool DestroyIcon(IntPtr handle);
+    public static partial bool DestroyIcon(nint handle);
 
     public static Icon CreateTintedIcon(Icon baseIcon, Color accent)
     {
         using var srcBitmap = baseIcon.ToBitmap();
         using var tintedBitmap = TintBitmap(srcBitmap, accent);
 
-        IntPtr hIcon = tintedBitmap.GetHicon();
+        nint hIcon = tintedBitmap.GetHicon();
 
         try
         {
@@ -49,21 +49,11 @@ internal static partial class IconColorizer
         {
             for (int x = 0; x < source.Width; ++x)
             {
-                var c = source.GetPixel(x, y);
+                var src = source.GetPixel(x, y);
+                var dst = src.A is 0 ? Color.Transparent :
+                    Color.FromArgb(src.A, accent.R, accent.G, accent.B);
 
-                if (c.A is 0)
-                {
-                    result.SetPixel(x, y, Color.Transparent);
-                    continue;
-                }
-
-                float intensity = (0.299f * c.R + 0.587f * c.G + 0.114f * c.B) / 255.0f;
-
-                int r = (int)(accent.R * intensity);
-                int g = (int)(accent.G * intensity);
-                int b = (int)(accent.B * intensity);
-
-                result.SetPixel(x, y, Color.FromArgb(c.A, r, g, b));
+                result.SetPixel(x, y, dst);
             }
         }
 

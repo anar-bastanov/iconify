@@ -142,7 +142,8 @@ internal sealed partial class ContextMenuManager : IDisposable
     private static Bitmap? GetRunnerThumbnailBitmap(Theme systemTheme, Runner runner)
     {
         var accentColor = systemTheme.GetAccentColor();
-        string iconName = $"{runner.GetString()}_0".ToLower();
+        string runnerName = runner.GetString().ToLower();
+        string iconName = $"{runnerName}_0";
 
         if (Resources.ResourceManager.GetObject(iconName) is not Icon icon)
             return null;
@@ -176,13 +177,13 @@ internal sealed partial class ContextMenuManager : IDisposable
 
         theme = theme == Theme.System ? systemTheme : theme;
         Color? accentColor = theme.GetAccentColor();
-        string runnerName = runner.GetString();
+        string runnerName = runner.GetString().ToLower();
         int capacity = runner.GetFrameNumber();
         var list = new List<Icon>(capacity);
 
         for (int i = 0; i < capacity; ++i)
         {
-            string iconName = $"{runnerName}_{i}".ToLower();
+            string iconName = $"{runnerName}_{i}";
 
             if (rm.GetObject(iconName) is Icon baseIcon)
             {

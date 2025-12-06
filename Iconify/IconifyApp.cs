@@ -79,9 +79,16 @@ internal sealed class IconifyApp : ApplicationContext
 
     private void UserPreferenceChanged(object? sender, UserPreferenceChangedEventArgs e)
     {
-        if (e.Category is not (UserPreferenceCategory.General or UserPreferenceCategory.Color or
-                               UserPreferenceCategory.VisualStyle or UserPreferenceCategory.Window))
-            return;
+        switch (e.Category)
+        {
+            case UserPreferenceCategory.General:
+            case UserPreferenceCategory.Color:
+            case UserPreferenceCategory.VisualStyle:
+            case UserPreferenceCategory.Window:
+                break;
+            default:
+                return;
+        }
 
         if (Interlocked.Exchange(ref _isRestartRequested, true))
             return;
@@ -90,8 +97,15 @@ internal sealed class IconifyApp : ApplicationContext
 
         _uiContext.Post(_ =>
         {
-            if (_theme.Value is Theme.System or Theme.White or Theme.Gray or Theme.Black)
-                SetTheme(Theme.System);
+            switch (_theme.Value)
+            {
+                case Theme.System:
+                case Theme.White:
+                case Theme.Gray:
+                case Theme.Black:
+                    SetTheme(Theme.System);
+                    break;
+            }
 
             _animationTimer.Stop();
             _animationTimer.Tick -= AnimationTick;

@@ -24,10 +24,10 @@
 
   <PropertyGroup>
     <AssemblyName>Iconify</AssemblyName>
-    <Version>2.2.6</Version>
-    <AssemblyVersion>2.2.6.0</AssemblyVersion>
-    <FileVersion>2.2.6.0</FileVersion>
-    <InformationalVersion>2.2.6</InformationalVersion>
+    <Version>2.2.7</Version>
+    <AssemblyVersion>2.2.7.0</AssemblyVersion>
+    <FileVersion>2.2.7.0</FileVersion>
+    <InformationalVersion>2.2.7</InformationalVersion>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
   </PropertyGroup>
 
