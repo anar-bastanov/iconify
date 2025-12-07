@@ -34,7 +34,8 @@ internal readonly record struct RunnerColor(uint value) : IClosedEnum<RunnerColo
         Cyan   = 16,
         Blue   = 17,
         Purple = 18,
-        Pink   = 19;
+        Violet = 19,
+        Pink   = 20;
 
     private static ReadOnlySpan<uint> EnumerationValues => [
         System,
@@ -50,6 +51,7 @@ internal readonly record struct RunnerColor(uint value) : IClosedEnum<RunnerColo
         Cyan,
         Blue,
         Purple,
+        Violet,
         Pink
     ];
 
@@ -69,8 +71,9 @@ internal readonly record struct RunnerColor(uint value) : IClosedEnum<RunnerColo
             Teal   => Color.FromArgb(255,  33, 163, 151),
             Cyan   => Color.FromArgb(255,   0, 225, 245),
             Blue   => Color.FromArgb(255,  59, 130, 246),
-            Purple => Color.FromArgb(255, 147, 112, 250),
-            Pink   => Color.FromArgb(255, 236,  72, 153),
+            Purple => Color.FromArgb(255, 120,  80, 220),
+            Violet => Color.FromArgb(255, 167, 125, 250),
+            Pink   => Color.FromArgb(255, 240, 100, 160),
             _      => null
         };
     }
@@ -92,6 +95,7 @@ internal readonly record struct RunnerColor(uint value) : IClosedEnum<RunnerColo
             Cyan   => nameof(Cyan),
             Blue   => nameof(Blue),
             Purple => nameof(Purple),
+            Violet => nameof(Violet),
             Pink   => nameof(Pink),
             _      => ""
         };
@@ -114,6 +118,7 @@ internal readonly record struct RunnerColor(uint value) : IClosedEnum<RunnerColo
             nameof(Cyan)   => Cyan,
             nameof(Blue)   => Blue,
             nameof(Purple) => Purple,
+            nameof(Violet) => Violet,
             nameof(Pink)   => Pink,
             _              => null
         };
