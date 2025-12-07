@@ -70,5 +70,17 @@ namespace Iconify.Properties {
                 this["IsFirstLaunch"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SystemTheme {
+            get {
+                return ((string)(this["SystemTheme"]));
+            }
+            set {
+                this["SystemTheme"] = value;
+            }
+        }
     }
 }

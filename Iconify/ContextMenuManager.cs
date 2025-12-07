@@ -35,7 +35,7 @@ internal sealed partial class ContextMenuManager : IDisposable
         Func<Runner> getRunner, Action<Runner> setRunner,
         Func<RunnerColor> getRunnerColor, Action<RunnerColor> setRunnerColor,
         Func<RunnerSpeed> getRunnerSpeed, Action<RunnerSpeed> setRunnerSpeed,
-        Func<RunnerColor> getSystemTheme,
+        RunnerColor systemTheme,
         Func<bool> getStartup, Func<bool, bool> setStartup,
         Action openRepository,
         Action onExit)
@@ -75,20 +75,20 @@ internal sealed partial class ContextMenuManager : IDisposable
             {
                 HandleMenuItemSelection(parent, sender, setRunner);
 
-                LoadRunnerIcons(getRunner(), getRunnerColor(), getSystemTheme());
+                LoadRunnerIcons(getRunner(), getRunnerColor(), systemTheme);
             },
             getRunner(),
-            r => GetRunnerThumbnail(r, getSystemTheme()));
+            r => GetRunnerThumbnail(r, systemTheme));
 
         colorMenu.SetupSubMenusFromEnum(
             (parent, sender) =>
             {
                 HandleMenuItemSelection(parent, sender, setRunnerColor);
 
-                LoadRunnerIcons(getRunner(), getRunnerColor(), getSystemTheme());
+                LoadRunnerIcons(getRunner(), getRunnerColor(), systemTheme);
             },
             getRunnerColor(),
-            t => GetColorThumbnail(t, getSystemTheme()));
+            t => GetColorThumbnail(t, systemTheme));
 
         speedMenu.SetupSubMenusFromEnum(
             (parent, sender) =>
@@ -112,7 +112,7 @@ internal sealed partial class ContextMenuManager : IDisposable
 
         contextMenuStrip.Renderer = new ContextMenuRenderer();
 
-        LoadRunnerIcons(getRunner(), getRunnerColor(), getSystemTheme());
+        LoadRunnerIcons(getRunner(), getRunnerColor(), systemTheme);
 
         _notifyIcon.Text = AppStrings.ApplicationName;
         _notifyIcon.Icon = _icons![0];
