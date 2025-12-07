@@ -168,7 +168,8 @@ internal sealed partial class ContextMenuManager : IDisposable
         if (accentColor is null)
             return icon.ToBitmap();
 
-        using var tintedIcon = IconColorizer.CreateTintedIcon(icon, accentColor.Value);
+        var outlineColor = systemTheme == RunnerColor.White ? Color.White : Color.Black;
+        using var tintedIcon = IconColorizer.CreateTintedIcon(icon, accentColor.Value, outlineColor);
         return tintedIcon.ToBitmap();
     }
 

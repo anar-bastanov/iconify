@@ -23,10 +23,10 @@ internal static partial class IconColorizer
     [return: MarshalAs(UnmanagedType.Bool)]
     public static partial bool DestroyIcon(nint handle);
 
-    public static Icon CreateTintedIcon(Icon baseIcon, Color accent)
+    public static Icon CreateTintedIcon(Icon baseIcon, Color accent, Color? outline = null)
     {
         using var oldBitmap = baseIcon.ToBitmap();
-        using var newBitmap = TintBitmap(oldBitmap, accent);
+        using var newBitmap = TintBitmap(oldBitmap, accent, outline ?? accent);
 
         nint hIcon = newBitmap.GetHicon();
 
@@ -41,7 +41,7 @@ internal static partial class IconColorizer
         }
     }
 
-    private static Bitmap TintBitmap(Bitmap source, Color accent)
+    private static Bitmap TintBitmap(Bitmap source, Color accent, Color outline)
     {
         var result = new Bitmap(source.Width, source.Height, PixelFormat.Format32bppArgb);
 
@@ -50,8 +50,12 @@ internal static partial class IconColorizer
             for (int x = 0; x < source.Width; ++x)
             {
                 var oldPixel = source.GetPixel(x, y);
-                var newPixel = oldPixel.A is 0 ? Color.Transparent :
-                    Color.FromArgb(oldPixel.A, accent.R, accent.G, accent.B);
+                var newPixel = (oldPixel.A, oldPixel.R, oldPixel.G, oldPixel.B) switch
+                {
+                    (0, _, _, _)      => Color.Transparent,
+                    (byte a, 0, 0, 0) => Color.FromArgb(a, outline.R, outline.G, outline.B),
+                    (byte a, _, _, _) => Color.FromArgb(a, accent.R, accent.G, accent.B)
+                };
 
                 result.SetPixel(x, y, newPixel);
             }
