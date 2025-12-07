@@ -25,15 +25,15 @@ internal static partial class IconColorizer
 
     public static Icon CreateTintedIcon(Icon baseIcon, Color accent)
     {
-        using var srcBitmap = baseIcon.ToBitmap();
-        using var tintedBitmap = TintBitmap(srcBitmap, accent);
+        using var oldBitmap = baseIcon.ToBitmap();
+        using var newBitmap = TintBitmap(oldBitmap, accent);
 
-        nint hIcon = tintedBitmap.GetHicon();
+        nint hIcon = newBitmap.GetHicon();
 
         try
         {
-            using var tempIcon = Icon.FromHandle(hIcon);
-            return (Icon)tempIcon.Clone();
+            using var tmpIcon = Icon.FromHandle(hIcon);
+            return (Icon)tmpIcon.Clone();
         }
         finally
         {
@@ -49,11 +49,11 @@ internal static partial class IconColorizer
         {
             for (int x = 0; x < source.Width; ++x)
             {
-                var src = source.GetPixel(x, y);
-                var dst = src.A is 0 ? Color.Transparent :
-                    Color.FromArgb(src.A, accent.R, accent.G, accent.B);
+                var oldPixel = source.GetPixel(x, y);
+                var newPixel = oldPixel.A is 0 ? Color.Transparent :
+                    Color.FromArgb(oldPixel.A, accent.R, accent.G, accent.B);
 
-                result.SetPixel(x, y, dst);
+                result.SetPixel(x, y, newPixel);
             }
         }
 

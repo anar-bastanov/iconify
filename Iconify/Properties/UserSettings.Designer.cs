@@ -38,24 +38,24 @@ namespace Iconify.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("System")]
-        public string Theme {
+        public string RunnerColor {
             get {
-                return ((string)(this["Theme"]));
+                return ((string)(this["RunnerColor"]));
             }
             set {
-                this["Theme"] = value;
+                this["RunnerColor"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100%")]
-        public string Speed {
+        public string RunnerSpeed {
             get {
-                return ((string)(this["Speed"]));
+                return ((string)(this["RunnerSpeed"]));
             }
             set {
-                this["Speed"] = value;
+                this["RunnerSpeed"] = value;
             }
         }
         

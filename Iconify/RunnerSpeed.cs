@@ -18,7 +18,7 @@ using System.Runtime.InteropServices;
 
 namespace Iconify;
 
-internal readonly record struct Speed(uint value) : IClosedEnum<Speed>
+internal readonly record struct RunnerSpeed(uint value) : IClosedEnum<RunnerSpeed>
 {
     public const uint
         X100 = 0,
@@ -39,7 +39,7 @@ internal readonly record struct Speed(uint value) : IClosedEnum<Speed>
 
     public int GetDelay()
     {
-        // Each animation is assumed to 8 frames per second
+        // Each animation is assumed to be 8 frames per second
         const float interval = 1000.0f / 8;
 
         return value switch
@@ -66,9 +66,9 @@ internal readonly record struct Speed(uint value) : IClosedEnum<Speed>
         };
     }
 
-    public static bool TryParse([NotNullWhen(true)] string? value, out Speed result)
+    public static bool TryParse([NotNullWhen(true)] string? value, out RunnerSpeed result)
     {
-        Speed? nullableResult = value switch
+        RunnerSpeed? nullableResult = value switch
         {
             "100%" => X100,
             "125%" => X125,
@@ -82,12 +82,12 @@ internal readonly record struct Speed(uint value) : IClosedEnum<Speed>
         return nullableResult.HasValue;
     }
 
-    public static ReadOnlySpan<Speed> GetValues()
+    public static ReadOnlySpan<RunnerSpeed> GetValues()
     {
-        return MemoryMarshal.Cast<uint, Speed>(EnumerationValues);
+        return MemoryMarshal.Cast<uint, RunnerSpeed>(EnumerationValues);
     }
 
-    public static implicit operator uint(Speed speed) => speed.Value;
+    public static implicit operator uint(RunnerSpeed runnerSpeed) => runnerSpeed.Value;
 
-    public static implicit operator Speed(uint value) => new(value);
+    public static implicit operator RunnerSpeed(uint value) => new(value);
 }

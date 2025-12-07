@@ -18,6 +18,7 @@ using Iconify.Properties;
 using System.Diagnostics;
 
 using Timer = System.Windows.Forms.Timer;
+using UPCategory = Microsoft.Win32.UserPreferenceCategory;
 
 namespace Iconify;
 
@@ -29,9 +30,9 @@ internal sealed class IconifyApp : ApplicationContext
 
     private Runner _runner;
 
-    private Theme _theme;
+    private RunnerColor _runnerColor;
 
-    private Speed _speed;
+    private RunnerSpeed _runnerSpeed;
 
     private readonly Timer _animationTimer = new();
 
@@ -51,21 +52,22 @@ internal sealed class IconifyApp : ApplicationContext
             StartupAppManager.SetStartup(true);
 
         _ = Runner.TryParse(UserSettings.Default.Runner, out _runner);
-        _ = Theme.TryParse(UserSettings.Default.Theme, out _theme);
-        _ = Speed.TryParse(UserSettings.Default.Speed, out _speed);
+        _ = RunnerColor.TryParse(UserSettings.Default.RunnerColor, out _runnerColor);
+        _ = RunnerSpeed.TryParse(UserSettings.Default.RunnerSpeed, out _runnerSpeed);
 
         SystemEvents.UserPreferenceChanged += UserPreferenceChanged;
 
         _contextMenuManager = new ContextMenuManager(
             GetRunner, SetRunner,
-            GetSystemTheme, GetTheme, SetTheme,
-            GetSpeed, SetSpeed,
+            GetRunnerColor, SetRunnerColor,
+            GetRunnerSpeed, SetRunnerSpeed,
+            GetSystemTheme,
             StartupAppManager.GetStartup, StartupAppManager.SetStartup,
             OpenRepository,
             Application.Exit);
 
         _animationTimer.Tick += AnimationTick;
-        _animationTimer.Interval = _speed.GetDelay();
+        _animationTimer.Interval = _runnerSpeed.GetDelay();
         _animationTimer.Start();
 
         if (isFirstLaunch)
@@ -79,16 +81,8 @@ internal sealed class IconifyApp : ApplicationContext
 
     private void UserPreferenceChanged(object? sender, UserPreferenceChangedEventArgs e)
     {
-        switch (e.Category)
-        {
-            case UserPreferenceCategory.General:
-            case UserPreferenceCategory.Color:
-            case UserPreferenceCategory.VisualStyle:
-            case UserPreferenceCategory.Window:
-                break;
-            default:
-                return;
-        }
+        if (e.Category is not (UPCategory.General or UPCategory.Color or UPCategory.VisualStyle))
+            return;
 
         if (Interlocked.Exchange(ref _isRestartRequested, true))
             return;
@@ -97,15 +91,8 @@ internal sealed class IconifyApp : ApplicationContext
 
         _uiContext.Post(_ =>
         {
-            switch (_theme.Value)
-            {
-                case Theme.System:
-                case Theme.White:
-                case Theme.Gray:
-                case Theme.Black:
-                    SetTheme(Theme.System);
-                    break;
-            }
+            if (_runnerColor.Value is RunnerColor.White or RunnerColor.Gray or RunnerColor.Black)
+                SetRunnerColor(RunnerColor.System);
 
             _animationTimer.Stop();
             _animationTimer.Tick -= AnimationTick;
@@ -113,17 +100,17 @@ internal sealed class IconifyApp : ApplicationContext
             _contextMenuManager.Dispose();
 
             Application.Restart();
-            Application.ExitThread();
-
+            Application.ExitThread(); // Just in case
         }, null);
     }
 
-    private static Theme GetSystemTheme()
+    private static RunnerColor GetSystemTheme()
     {
         using var rKey = Registry.CurrentUser.OpenSubKey(AppStrings.RegistryNamePersonalization);
         object? value = rKey?.GetValue(AppStrings.RegistryKeyIsLightTheme);
 
-        return value is 0 ? Theme.White : Theme.Black;
+        // Black color for light theme, White color for dark theme
+        return value is 0 ? RunnerColor.White : RunnerColor.Black;
     }
 
     private Runner GetRunner()
@@ -139,30 +126,30 @@ internal sealed class IconifyApp : ApplicationContext
         _runner = value;
     }
 
-    private Theme GetTheme()
+    private RunnerColor GetRunnerColor()
     {
-        return _theme;
+        return _runnerColor;
     }
 
-    private void SetTheme(Theme value)
+    private void SetRunnerColor(RunnerColor value)
     {
-        UserSettings.Default.Theme = value.GetString();
+        UserSettings.Default.RunnerColor = value.GetString();
         UserSettings.Default.Save();
 
-        _theme = value;
+        _runnerColor = value;
     }
 
-    private Speed GetSpeed()
+    private RunnerSpeed GetRunnerSpeed()
     {
-        return _speed;
+        return _runnerSpeed;
     }
 
-    private void SetSpeed(Speed value)
+    private void SetRunnerSpeed(RunnerSpeed value)
     {
-        UserSettings.Default.Speed = value.GetString();
+        UserSettings.Default.RunnerSpeed = value.GetString();
         UserSettings.Default.Save();
 
-        _speed = value;
+        _runnerSpeed = value;
 
         _animationTimer.Stop();
         _animationTimer.Interval = value.GetDelay();

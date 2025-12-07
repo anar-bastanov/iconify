@@ -41,8 +41,7 @@ internal readonly record struct Runner(uint value) : IClosedEnum<Runner>
 
     public int GetFrameNumber()
     {
-        // Hardcoded values depending on total number of sprites present
-        // in resources per animation
+        // Hardcoded values for the total number of sprites per animation in project resources
         return value switch
         {
             Cat     => 5,

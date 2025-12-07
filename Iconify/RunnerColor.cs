@@ -18,23 +18,23 @@ using System.Runtime.InteropServices;
 
 namespace Iconify;
 
-internal readonly record struct Theme(uint value) : IClosedEnum<Theme>
+internal readonly record struct RunnerColor(uint value) : IClosedEnum<RunnerColor>
 {
     public const uint
-        System  = 0,
-        White   = 1,
-        Gray    = 2,
-        Black   = 3,
-        Red     = 10,
-        Orange  = 11,
-        Yellow  = 12,
-        Lime    = 13,
-        Green   = 14,
-        Teal    = 15,
-        Cyan    = 16,
-        Blue    = 17,
-        Purple  = 18,
-        Pink    = 19;
+        System = 0,
+        White  = 1,
+        Gray   = 2,
+        Black  = 3,
+        Red    = 10,
+        Orange = 11,
+        Yellow = 12,
+        Lime   = 13,
+        Green  = 14,
+        Teal   = 15,
+        Cyan   = 16,
+        Blue   = 17,
+        Purple = 18,
+        Pink   = 19;
 
     private static ReadOnlySpan<uint> EnumerationValues => [
         System,
@@ -97,9 +97,9 @@ internal readonly record struct Theme(uint value) : IClosedEnum<Theme>
         };
     }
 
-    public static bool TryParse([NotNullWhen(true)] string? value, out Theme result)
+    public static bool TryParse([NotNullWhen(true)] string? value, out RunnerColor result)
     {
-        Theme? nullableResult = value switch
+        RunnerColor? nullableResult = value switch
         {
             nameof(System) => System,
             nameof(White)  => White,
@@ -122,12 +122,12 @@ internal readonly record struct Theme(uint value) : IClosedEnum<Theme>
         return nullableResult.HasValue;
     }
 
-    public static ReadOnlySpan<Theme> GetValues()
+    public static ReadOnlySpan<RunnerColor> GetValues()
     {
-        return MemoryMarshal.Cast<uint, Theme>(EnumerationValues);
+        return MemoryMarshal.Cast<uint, RunnerColor>(EnumerationValues);
     }
 
-    public static implicit operator uint(Theme theme) => theme.Value;
+    public static implicit operator uint(RunnerColor runnerColor) => runnerColor.Value;
 
-    public static implicit operator Theme(uint value) => new(value);
+    public static implicit operator RunnerColor(uint value) => new(value);
 }

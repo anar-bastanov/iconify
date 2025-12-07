@@ -33,8 +33,9 @@ internal sealed partial class ContextMenuManager : IDisposable
 
     public ContextMenuManager(
         Func<Runner> getRunner, Action<Runner> setRunner,
-        Func<Theme> getSystemTheme, Func<Theme> getTheme, Action<Theme> setTheme,
-        Func<Speed> getSpeed, Action<Speed> setSpeed,
+        Func<RunnerColor> getRunnerColor, Action<RunnerColor> setRunnerColor,
+        Func<RunnerSpeed> getRunnerSpeed, Action<RunnerSpeed> setRunnerSpeed,
+        Func<RunnerColor> getSystemTheme,
         Func<bool> getStartup, Func<bool, bool> setStartup,
         Action openRepository,
         Action onExit)
@@ -42,7 +43,7 @@ internal sealed partial class ContextMenuManager : IDisposable
         var runnersMenu = new CustomToolStripMenuItem("Runners");
         var upcomingItemsMenu = new CustomToolStripMenuItem($"More soon");
         var settingsMenu = new CustomToolStripMenuItem("Settings");
-        var themeMenu = new CustomToolStripMenuItem("Accent color");
+        var colorMenu = new CustomToolStripMenuItem("Accent color");
         var speedMenu = new CustomToolStripMenuItem("Animation speed");
         var startupMenu = new CustomToolStripMenuItem("Launch at startup");
         var informationMenu = new CustomToolStripMenuItem("Information");
@@ -52,7 +53,7 @@ internal sealed partial class ContextMenuManager : IDisposable
         var contextMenuStrip = new ContextMenuStrip(new Container());
 
         settingsMenu.DropDownItems.AddRange(
-            themeMenu,
+            colorMenu,
             speedMenu,
             startupMenu);
 
@@ -74,27 +75,27 @@ internal sealed partial class ContextMenuManager : IDisposable
             {
                 HandleMenuItemSelection(parent, sender, setRunner);
 
-                SetIcons(getSystemTheme(), getTheme(), getRunner());
+                LoadRunnerIcons(getRunner(), getRunnerColor(), getSystemTheme());
             },
             getRunner(),
-            r => GetRunnerThumbnailBitmap(getSystemTheme(), r));
+            r => GetRunnerThumbnail(r, getSystemTheme()));
 
-        themeMenu.SetupSubMenusFromEnum(
+        colorMenu.SetupSubMenusFromEnum(
             (parent, sender) =>
             {
-                HandleMenuItemSelection(parent, sender, setTheme);
+                HandleMenuItemSelection(parent, sender, setRunnerColor);
 
-                SetIcons(getSystemTheme(), getTheme(), getRunner());
+                LoadRunnerIcons(getRunner(), getRunnerColor(), getSystemTheme());
             },
-            getTheme(),
-            t => GetThemeThumbnailBitmap(getSystemTheme(), t));
+            getRunnerColor(),
+            t => GetColorThumbnail(t, getSystemTheme()));
 
         speedMenu.SetupSubMenusFromEnum(
             (parent, sender) =>
             {
-                HandleMenuItemSelection(parent, sender, setSpeed);
+                HandleMenuItemSelection(parent, sender, setRunnerSpeed);
             },
-            getSpeed(),
+            getRunnerSpeed(),
             _ => null);
 
         upcomingItemsMenu.Enabled = false;
@@ -111,7 +112,7 @@ internal sealed partial class ContextMenuManager : IDisposable
 
         contextMenuStrip.Renderer = new ContextMenuRenderer();
 
-        SetIcons(getSystemTheme(), getTheme(), getRunner());
+        LoadRunnerIcons(getRunner(), getRunnerColor(), getSystemTheme());
 
         _notifyIcon.Text = AppStrings.ApplicationName;
         _notifyIcon.Icon = _icons![0];
@@ -139,7 +140,7 @@ internal sealed partial class ContextMenuManager : IDisposable
         static string? ToPascalCase(string name) => PascalCaseRegex().Replace(name, "$2");
     }
 
-    private static Bitmap? GetRunnerThumbnailBitmap(Theme systemTheme, Runner runner)
+    private static Bitmap? GetRunnerThumbnail(Runner runner, RunnerColor systemTheme)
     {
         var accentColor = systemTheme.GetAccentColor();
         string runnerName = runner.GetString().ToLower();
@@ -155,10 +156,10 @@ internal sealed partial class ContextMenuManager : IDisposable
         return tintedIcon.ToBitmap();
     }
 
-    private static Bitmap? GetThemeThumbnailBitmap(Theme systemTheme, Theme theme)
+    private static Bitmap? GetColorThumbnail(RunnerColor runnerColor, RunnerColor systemTheme)
     {
-        theme = theme == Theme.System ? systemTheme : theme;
-        var accentColor = theme.GetAccentColor();
+        runnerColor = runnerColor == RunnerColor.System ? systemTheme : runnerColor;
+        var accentColor = runnerColor.GetAccentColor();
         const string iconName = "color_preview_frame";
 
         if (Resources.ResourceManager.GetObject(iconName) is not Icon icon)
@@ -171,12 +172,12 @@ internal sealed partial class ContextMenuManager : IDisposable
         return tintedIcon.ToBitmap();
     }
 
-    public void SetIcons(Theme systemTheme, Theme theme, Runner runner)
+    public void LoadRunnerIcons(Runner runner, RunnerColor runnerColor, RunnerColor systemTheme)
     {
         var rm = Resources.ResourceManager;
 
-        theme = theme == Theme.System ? systemTheme : theme;
-        Color? accentColor = theme.GetAccentColor();
+        runnerColor = runnerColor == RunnerColor.System ? systemTheme : runnerColor;
+        Color? accentColor = runnerColor.GetAccentColor();
         string runnerName = runner.GetString().ToLower();
         int capacity = runner.GetFrameNumber();
         var list = new List<Icon>(capacity);
