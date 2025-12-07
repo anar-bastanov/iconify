@@ -157,7 +157,7 @@ internal sealed class IconifyApp : ApplicationContext
         _userSettings.IsFirstLaunch = value;
         _userSettings.Save();
 
-        if (value)
+        if (!value)
             _contextMenuManager.ShowBalloonTip();
     }
 
