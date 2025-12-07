@@ -23,10 +23,10 @@ Forked and stripped down from [RunCat 365](https://github.com/Kyome22/RunCat365)
 
 Download and extract one of the archives below, then run `Iconify.exe`:
 
-| [Portable build](https://github.com/anar-bastanov/iconify/releases/latest/download/Iconify-portable-win-x64.zip) | [Framework-dependent build](https://github.com/anar-bastanov/iconify/releases/latest/download/Iconify-runtime-win-x64.zip) |
-|:-|:-|
-| Bigger download | Smaller download |
-| No .NET runtime required | Requires [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0) |
+| [Portable build](https://github.com/anar-bastanov/iconify/releases/latest/download/Iconify-portable-win-x64.zip) | [Framework-dependent build](https://github.com/anar-bastanov/iconify/releases/latest/download/Iconify-framework-win-x64.zip) |
+| :------------------------------- | :------------------------------------ |
+| Bigger download                  | Smaller download                      |
+| No .NET runtime required         | Requires [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0) |
 | Executable can be moved anywhere | Executable must stay with other files |
 
 > [!TIP]
